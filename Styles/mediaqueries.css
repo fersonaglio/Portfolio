@@ -1,0 +1,16 @@
+/*Mobile*/
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+
+  #hamburguer-nav {
+    display: flex;
+  } 
+}
+
+@media screen and (max-width: 390px) {
+  .logo {
+    font-size: 1.1rem;
+  }
+}
