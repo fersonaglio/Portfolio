@@ -66,22 +66,24 @@
         <button class="btn btn-color-1" onclick="location.href='#contato'">Contato</button>
       </div><!--fim btn container-->
       <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="Meu perifl linkedin"  target="_blank" class="icon" onclick="location.href='https:/www.linkedin.com/in/fernando-sonaglio0/'">
+        <img src="./assets/linkedin.png" alt="Meu perifl linkedin" class="icon" onclick="location.href='https:/www.linkedin.com/in/fernando-sonaglio0/'">
 
-        <img src="./assets/github.png" alt="Meu perifl linkedin"  target="_blank" class="icon" onclick="location.href='https:/github.com/fersonaglio'">
+        <img src="./assets/github.png" alt="Meu perifl linkedin" class="icon" onclick="location.href='https:/github.com/fersonaglio'">
       </div><!--socials-container-->
     </div><!--fim section__txt-->
   </sectio>
 
   <section id="sobre">
+    <div class="titulo-sobre">
     <p class="section__txt__p1">Conheça mais</p>
     <h1 class="titulo">Sobre Mim</h1>
+    </div><!--fim titulo-sobre -->
     <div class="section-container">
       <div class="section__foto-container">
         <img src="./assets/about-pic.jpg" alt="Foto de perfil" class="foto-sobre">
       </div><!--fim section foto container-->
       <div class="sobre-detalhes-container">
-        <div class="sobre-containers">
+        <div class="sobre-container">
           <div class="detalhes-container">
             <img src="./assets/experience.png" alt="Icone de Experiência" class="icon">
             <h3>Experiência</h3>
@@ -103,11 +105,13 @@
   </section>
 
   <section id="experiencia">
+    <div class="titulo-experiencia">
     <p class="section__txt__p1">Conheça minhas</p>
     <h1 class="titulo">Experiências</h1>
+    </div><!--fim titulo experiencia-->
     <div class="experiencia-detalhes-container">
-      <div class="sobre-continers">
-        <div class="detalhes-containers">
+      <div class="sobre-container">
+        <div class="detalhes-container">
           <h2 class="experiencia-sub-titulo">Desenvolvimento FrontEnd</h2>
           <div class="article-container">
             <article>
@@ -134,16 +138,106 @@
             <article>
               <img src="./assets/checkmark.png" alt="Icone experiencia" class="icon">
               <div>
-                <h3>TypeScript</h3>
+                <h3>React</h3>
                 <p>Básico</p>
               </div>
             </article>
-          </div>
+            <article>
+              <img src="./assets/checkmark.png" alt="Icone experiencia" class="icon">
+              <div>
+                <h3>Git</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+            <article>
+              <img src="./assets/checkmark.png" alt="Icone experiencia" class="icon">
+              <div>
+                <h3>Figma</h3>
+                <p>Básico</p>
+              </div>
+            </article>
+          </div><!--fim article container-->
         </div><!--fim detalhes containers-->
       </div><!--fim sobre continers-->
     </div><!--fim experiencia detalhes container-->
   </section><!--fim experiencia-->
 
+  <section id="projetos">
+    <div class="titulo-projetos">
+    <p class="section__txt__p1">Alguns dos meus</p>
+    <h1 class="titulo">Projetos</h1>
+    </div><!--fim titulo=projetos-->
+    <div class="experiencia-detalhes-container">
+    <div class="sobre-container">
+        <div class="detalhes-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Projeto 1" class="project-img">
+          </div><!--fim article container-->
+          <h2 class="experiencia-sub-titulo project-title">Projeto 1</h2>
+          <div class="button-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.herf='https:/www.github.com/'">
+              github
+            </button>
+          </div>
+        </div><!--fim detalhes-container color-container-->
+
+        <div class="detalhes-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Projeto 1" class="project-img">
+          </div><!--fim article container-->
+          <h2 class="experiencia-sub-titulo project-title">Projeto 2</h2>
+          <div class="button-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.herf='https:/www.github.com/'">
+              github
+            </button>
+          </div>
+        </div><!--fim detalhes-container color-container-->
+
+        <div class="detalhes-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Projeto 1" class="project-img">
+          </div><!--fim article container-->
+          <h2 class="experiencia-sub-titulo project-title">Projeto 3</h2>
+          <div class="button-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.herf='https:/www.github.com/'">
+              github
+            </button>
+          </div>
+        </div><!--fim detalhes-container color-container-->
+      </div><!--fim sobre container-->
+      </div><!--fim experiencia detalhes container-->
+  </section><!--fim section projetos-->
+
+  <section id="contato">
+    <div class="titulo-contato">
+    <p class="section__txt__p1">Entre em</p>
+    <h1 class="titulo">Contato</h1>
+    </div><!--fim titulo-contato-->
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Icone email" class="icon contact-icon email-icon">
+        <p><a href="mailto:examplemail@gmail.com">Examplemail@gmail.com</a></p>
+      </div><!--fim contact-info-container-->
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="Icone inkedin" class="icon contact-icon">
+        <p><a href="https://www.linkedin.com/in/fernando-sonaglio0/" target="_blank">Linkedin</a></p>
+      </div><!--fim contact-info-container-->
+    </div><!--fim contact-info-upper-container-->
+  </section>
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#experiencia">Experiência</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul><!--fim nav links-->
+      </div><!--fim nav-links-container-->
+    </nav>
+    <p>Copyright &#169; 2024 Fernando Sonaglio. Todos os direitos reservados</p>
+  </footer>
   <script src="./script.js"></script>
 </body>
 </html>

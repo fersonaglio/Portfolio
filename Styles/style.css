@@ -9,11 +9,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-header {
-  width: 100%;
-  padding: 28px 8%;
-}
-
 html {
   scroll-behavior: smooth;
 }
@@ -22,12 +17,27 @@ p {
   color: rgb(85, 85, 85);
 }
 
+section {
+  padding: 40px 4%;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+.section-container {
+  display: flex;
+}
+
 /*Transição*/
 a, .btn {
   transition: all 300ms ease;
 }
 
 /*Mavegação*/
+header {
+  padding: 10px 4%;
+}
+
 nav, .nav-links {
   display: flex;
 }
@@ -47,14 +57,14 @@ nav {
 a {
   color: black;
   text-decoration: none;
-  text-decoration: white;
+  text-decoration-color: white;
 }
 
 a:hover {
   color: gray;
   text-decoration: underline;
-  text-underline-offset: .5rem;
-  text-decoration: rgb(181, 181, 181);
+  text-underline-offset: 1rem;
+  text-decoration-color: rgb(181, 181, 181);
 }
 
 .logo {
@@ -131,19 +141,6 @@ a:hover {
   transform: none;
 }
 
-/*Seções*/
-section {
-  padding-top: 4vh;
-  height: 96vh;
-  margin: 0 10rem;
-  box-sizing: border-box;
-  min-height: fit-content;
-}
-
-.section-container {
-  display: flex;
-}
-
 /*Perfil*/
 #perfil {
   display: flex;
@@ -151,6 +148,11 @@ section {
   gap: 5rem;
   height: 80vh;
   padding: 24px 4%;
+}
+
+.titulo-sobre {
+  padding: 20px 4%;
+  line-height: 25px;
 }
 
 #perfil .section__foto-container {
@@ -252,7 +254,7 @@ section {
   position: relative;
 }
 
-.sobre-containers {
+.sobre-container {
   gap: 2rem;
   margin: 30px;
 }
@@ -262,7 +264,7 @@ section {
   flex-direction: column;
 }
 
-.sobre-containers, .sobre-detalhes-container {
+.sobre-container, .sobre-detalhes-container {
   display: flex;
 }
 
@@ -293,4 +295,127 @@ section {
   height: 400px;
   width: 400px;
   margin: auto 0;
+}
+
+/*Experiencia*/
+.titulo-experiencia {
+  padding: 20px 4%;
+  line-height: 25px;
+}
+
+.experiencia-sub-titulo {
+  color: rgb(85, 85, 85);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.experiencia-detalhes-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.article-container {
+  display: flex;
+  text-align: initial;
+  flex-wrap: wrap;
+  flex-direction: row;
+  gap: 2.5rem;
+  justify-content: space-around;
+}
+
+article {
+  display: flex;
+  width: 10rem;
+  justify-content: space-around;
+  gap: 0.5rem;
+}
+
+article .icon {
+  cursor: default;
+}
+
+/*Projetos*/
+.titulo-projetos {
+  padding: 20px 4%;
+  line-height: 25px;
+}
+
+.color-container {
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+}
+
+.project-img {
+  border-radius: 2rem;
+  width: 90%;
+  height: 90%;
+}
+
+.project-title {
+  margin: 1rem;
+  color: black;
+}
+
+.project-btn {
+  color: black;
+  border-color: rgb(163, 163, 163);
+}
+
+/*Contato*/
+#contato {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 70vh;
+}
+
+.titulo-contato {
+  padding: 20px 4%;
+  line-height: 25px;
+}
+
+.contact-info-upper-container {
+  display: flex;
+  justify-content: center;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  background: rgb(250, 250, 250);
+  margin: 2rem auto;
+  padding: 0.5rem;
+}
+
+.contact-info-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin: 1rem;
+}
+
+.contact-info-container p {
+  font-size: larger;
+}
+
+.contact-icon {
+  cursor: default;
+}
+
+.email-icon {
+  height: 2.5rem;
+}
+
+/*Footes*/
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+}
+
+footer p {
+  text-align: center;
 }
