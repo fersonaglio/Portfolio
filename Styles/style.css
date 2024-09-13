@@ -285,6 +285,11 @@ a:hover {
   text-align: center;
 }
 
+#sobre .txt-container {
+  padding: 5px 2%;
+  margin: 8px 2%;
+}
+
 .section-container {
   gap: 4rem;
   height: 80%;
@@ -370,7 +375,7 @@ article .icon {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 70vh;
+  height: 60vh;
 }
 
 .titulo-contato {
