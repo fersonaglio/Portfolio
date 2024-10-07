@@ -370,6 +370,17 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
+.hidden {
+  opacity: 0;
+  transform: translateY(20px); 
+  transition: opacity 3s ease-out, transform 0.5s ease-out;
+}
+
+.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /*Contato*/
 #contato {
   display: flex;
