@@ -1,244 +1,400 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Meu Portfolio</title>
+    <title>Meu Portfolio</title>
 
-<!--Fonte-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-<!--Fim fonte-->
+    <!--Fonte-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Fim fonte-->
 
-<!--Biblioteca Icones-->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-<!-- Fim Biblioteca Icones-->
+    <!--Biblioteca Icones-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Fim Biblioteca Icones-->
 
-  <link rel="stylesheet" href="./Styles/style.css">
-  <link rel="stylesheet" href="./Styles/mediaqueries.css">
-  <link rel="shortcut icon" type="imagex/png" href="./assets/android-chrome-192x192.ico">
+    <link rel="stylesheet" href="./Styles/style.css" />
+    <link rel="stylesheet" href="./Styles/mediaqueries.css" />
+    <link
+      rel="shortcut icon"
+      type="imagex/png"
+      href="./assets/android-chrome-192x192.ico"
+    />
+  </head>
+  <body>
+    <header>
+      <nav id="desktop-nav">
+        <div class="logo">
+          <i class="fa-solid fa-terminal"></i> Fernando Sonaglio
+        </div>
+        <div>
+          <ul class="nav-links">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+          <!--fim nav links-->
+        </div>
+      </nav>
+      <!--fim desktop nav-->
 
-</head>
-<body>
-  <header>
-    <nav id="desktop-nav">
-      <div class="logo"><i class="fa-solid fa-terminal"></i> Fernando Sonaglio</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#experiencia">Experiência</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul><!--fim nav links-->
-      </div>
-    </nav><!--fim desktop nav-->
-  
-    <nav id="hamburguer-nav">
-      <div class="logo"><i class="fa-solid fa-terminal"></i> Fernando Sonaglio</div>
-      <div class="hamburguer-menu">
-        <div class="hamburguer-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div><!--fim hamburguer icon-->
-        <div class="menu-links">
-          <li><a href="#sobre" onclick="toggleMenu()">Sobre</a></li>
-          <li><a href="#experiencia" onclick="toggleMenu()">Experiência</a></li>
-          <li><a href="#projetos" onclick="toggleMenu()">Projetos</a></li>
-          <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
-        </div><!--fim menu links-->
-      </div><!--fim hamburguer menu-->
-    </nav><!--fim hamburguer nav-->
-  </header>
+      <nav id="hamburguer-nav">
+        <div class="logo">
+          <i class="fa-solid fa-terminal"></i> Fernando Sonaglio
+        </div>
+        <div class="hamburguer-menu">
+          <div class="hamburguer-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!--fim hamburguer icon-->
+          <div class="menu-links">
+            <li><a href="#sobre" onclick="toggleMenu()">Sobre</a></li>
+            <li>
+              <a href="#experiencia" onclick="toggleMenu()">Experiência</a>
+            </li>
+            <li><a href="#projetos" onclick="toggleMenu()">Projetos</a></li>
+            <li><a href="#contato" onclick="toggleMenu()">Contato</a></li>
+          </div>
+          <!--fim menu links-->
+        </div>
+        <!--fim hamburguer menu-->
+      </nav>
+      <!--fim hamburguer nav-->
+    </header>
 
-  <sectio id="perfil">
-    <div class="section__foto-container">
-      <img src="./assets/profile-pic.png" alt="Foto de Perfil De Fernando Sonaglio">
-    </div><!--fim section__foto-container-->
-    <div class="section__txt">
-      <p class="section__txt__p1">Olá, eu sou</p>
-      <h1 class="titulo">Fernando Sonaglio</h1>
-      <p class="section__txt__p2">Front-End Developer</p>
-      <div class="btn-container">
-        <button class="btn btn-color-2" onclick="window.open('./assets/Currículo.pdf.pdf')">Currículo</button>
-
-        <button class="btn btn-color-1" onclick="location.href='#contato'">Contato</button>
-      </div><!--fim btn container-->
-      <div id="socials-container">
-        <img src="./assets/linkedin.png" alt="Meu perifl linkedin" class="icon" onclick="location.href='https://www.linkedin.com/in/fernando-sonaglio0/'">
-
-        <img src="./assets/github.png" alt="Meu perifl linkedin" class="icon" onclick="location.href='https://github.com/fersonaglio'">
-      </div><!--socials-container-->
-    </div><!--fim section__txt-->
-  </sectio>
-
-  <section id="sobre">
-    <div class="titulo-sobre">
-    <p class="section__txt__p1">Conheça mais</p>
-    <h1 class="titulo">Sobre Mim</h1>
-    </div><!--fim titulo-sobre -->
-    <div class="section-container">
+    <sectio id="perfil">
       <div class="section__foto-container">
-        <img src="./assets/about-pic.jpg" alt="Foto de perfil" class="foto-sobre">
-      </div><!--fim section foto container-->
-      <div class="sobre-detalhes-container">
+        <img
+          src="./assets/Foto frente-Photoroom.png"
+          alt="Foto de Perfil De Fernando Sonaglio"
+        />
+      </div>
+      <!--fim section__foto-container-->
+      <div class="section__txt">
+        <p class="section__txt__p1">Olá, eu sou</p>
+        <h1 class="titulo">Fernando Sonaglio</h1>
+        <p class="section__txt__p2">Front-End Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Currículo.pdf.pdf')"
+          >
+            Currículo
+          </button>
+
+          <button class="btn btn-color-1" onclick="location.href='#contato'">
+            Contato
+          </button>
+        </div>
+        <!--fim btn container-->
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="Meu perifl linkedin"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/fernando-sonaglio0/'"
+          />
+
+          <img
+            src="./assets/github.png"
+            alt="Meu perifl linkedin"
+            class="icon"
+            onclick="location.href='https://github.com/fersonaglio'"
+          />
+        </div>
+        <!--socials-container-->
+      </div>
+      <!--fim section__txt-->
+    </sectio>
+
+    <section id="sobre">
+      <div class="titulo-sobre">
+        <p class="section__txt__p1">Conheça mais</p>
+        <h1 class="titulo">Sobre Mim</h1>
+      </div>
+      <!--fim titulo-sobre -->
+      <div class="section-container">
+        <div class="section__foto-container">
+          <img
+            src="./assets/Foto perfil-Photoroom.png"
+            alt="Foto de perfil"
+            class="foto-sobre"
+          />
+        </div>
+        <!--fim section foto container-->
+        <div class="sobre-detalhes-container">
+          <div class="sobre-container">
+            <div class="detalhes-container">
+              <img
+                src="./assets/experience.png"
+                alt="Icone de Experiência"
+                class="icon"
+              />
+              <h3>Experiência</h3>
+              <p>1+ anos <br />Desenvolvimento Front-End</p>
+            </div>
+            <!--fim detalhes container-->
+            <div class="detalhes-container">
+              <img
+                src="./assets/education.png"
+                alt="Icone de Experiência"
+                class="icon"
+              />
+              <h3>Formação</h3>
+              <p>Bacharel em Sistemas de Informação</p>
+            </div>
+            <!--fim detalhes container-->
+          </div>
+          <!--fim sobre containers-->
+          <div class="txt-container">
+            Profissional de Sistemas de Informação com foco em desenvolvimento
+            Web. Experiência em HTML, CSS, JavaScript, frameworks como React.
+            Certificado em Programas para Internet e Programação de Algoritmos
+            Escaláveis <br />
+            Proativo, comunicativo, e focado em trabalho em equipe. Comprometido
+            com a entrega de soluções de alta qualidade.
+          </div>
+          <!--txt container-->
+        </div>
+        <!--fim seobre detalher container-->
+      </div>
+      <!--fim section container-->
+    </section>
+
+    <section id="experiencia">
+      <div class="titulo-experiencia">
+        <p class="section__txt__p1">Conheça minhas</p>
+        <h1 class="titulo">Experiências</h1>
+      </div>
+      <!--fim titulo experiencia-->
+      <div class="experiencia-detalhes-container">
         <div class="sobre-container">
           <div class="detalhes-container">
-            <img src="./assets/experience.png" alt="Icone de Experiência" class="icon">
-            <h3>Experiência</h3>
-            <p>1+ anos <br>Desenvolvimento Front-End</p>
-          </div><!--fim detalhes container-->
-          <div class="detalhes-container">
-            <img src="./assets/education.png" alt="Icone de Experiência" class="icon">
-            <h3>Formação</h3>
-            <p>Bacharel em 
-              Sistemas de Informação</p>
-          </div><!--fim detalhes container-->
-        </div><!--fim sobre containers-->
-        <div class="txt-container">
-          Profissional de Sistemas de Informação com foco em desenvolvimento Web. Experiência em HTML, CSS, JavaScript, frameworks como React. Certificado em Programas para Internet e Programação de Algoritmos Escaláveis <br>
-          Proativo, comunicativo, e focado em trabalho em equipe. Comprometido com a entrega de soluções de alta qualidade.
-        </div><!--txt container-->
-      </div><!--fim seobre detalher container-->
-    </div><!--fim section container-->
-  </section>
-
-  <section id="experiencia">
-    <div class="titulo-experiencia">
-    <p class="section__txt__p1">Conheça minhas</p>
-    <h1 class="titulo">Experiências</h1>
-    </div><!--fim titulo experiencia-->
-    <div class="experiencia-detalhes-container">
-      <div class="sobre-container">
-        <div class="detalhes-container">
-          <h2 class="experiencia-sub-titulo">Desenvolvimento Front End</h2>
-          <div class="article-container">
-            <article>
-              <img src="./assets/checkmark.png" alt="Icone experiencia" class="icon">
-              <div>
-                <h3>HTML</h3>
-                <p>Intermediário</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Icone experiencia" class="icon">
-              <div>
-                <h3>CSS</h3>
-                <p>Intermediário</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Icone experiencia" class="icon">
-              <div>
-                <h3>JavaScript</h3>
-                <p>Básico</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Icone experiencia" class="icon">
-              <div>
-                <h3>React</h3>
-                <p>Básico</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Icone experiencia" class="icon">
-              <div>
-                <h3>Git</h3>
-                <p>Básico</p>
-              </div>
-            </article>
-            <article>
-              <img src="./assets/checkmark.png" alt="Icone experiencia" class="icon">
-              <div>
-                <h3>Figma</h3>
-                <p>Básico</p>
-              </div>
-            </article>
-          </div><!--fim article container-->
-        </div><!--fim detalhes containers-->
-      </div><!--fim sobre continers-->
-    </div><!--fim experiencia detalhes container-->
-  </section><!--fim experiencia-->
-
-  <section id="projetos" class="hidden">
-    <div class="titulo-projetos">
-    <p class="section__txt__p1">Alguns dos meus</p>
-    <h1 class="titulo">Projetos</h1>
-    </div><!--fim titulo=projetos-->
-    <div class="experiencia-detalhes-container">
-    <div class="sobre-container">
-        <div class="detalhes-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-1.png" alt="Projeto 1" class="project-img">
-          </div><!--fim article container-->
-          <h2 class="experiencia-sub-titulo project-title">Projeto 1</h2>
-          <div class="button-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/fersonaglio/Projeto-Relogio'">
-              Github
-            </button>
+            <h2 class="experiencia-sub-titulo">Desenvolvimento Front End</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Icone experiencia"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Icone experiencia"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediário</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Icone experiencia"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Icone experiencia"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Icone experiencia"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Icone experiencia"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma</h3>
+                  <p>Básico</p>
+                </div>
+              </article>
+            </div>
+            <!--fim article container-->
           </div>
-        </div><!--fim detalhes-container color-container-->
+          <!--fim detalhes containers-->
+        </div>
+        <!--fim sobre continers-->
+      </div>
+      <!--fim experiencia detalhes container-->
+    </section>
+    <!--fim experiencia-->
 
-        <div class="detalhes-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-2.png" alt="Projeto 2" class="project-img">
-          </div><!--fim article container-->
-          <h2 class="experiencia-sub-titulo project-title">Projeto 2</h2>
-          <div class="button-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/fersonaglio/Projeto'">
-              Github
-            </button>
+    <section id="projetos" class="hidden">
+      <div class="titulo-projetos">
+        <p class="section__txt__p1">Alguns dos meus</p>
+        <h1 class="titulo">Projetos</h1>
+      </div>
+      <!--fim titulo=projetos-->
+      <div class="experiencia-detalhes-container">
+        <div class="sobre-container">
+          <div class="detalhes-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Projeto 1"
+                class="project-img"
+              />
+            </div>
+            <!--fim article container-->
+            <h2 class="experiencia-sub-titulo project-title">Projeto 1</h2>
+            <div class="button-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/fersonaglio/Projeto-Relogio'"
+              >
+                Github
+              </button>
+            </div>
           </div>
-        </div><!--fim detalhes-container color-container-->
+          <!--fim detalhes-container color-container-->
 
-        <div class="detalhes-container color-container">
-          <div class="article-container">
-            <img src="./assets/project-3.png" alt="Projeto 3" class="project-img">
-          </div><!--fim article container-->
-          <h2 class="experiencia-sub-titulo project-title">Projeto 3</h2>
-          <div class="button-container">
-            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/fersonaglio/Weather-App'">
-              Github
-            </button>
+          <div class="detalhes-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.png"
+                alt="Projeto 2"
+                class="project-img"
+              />
+            </div>
+            <!--fim article container-->
+            <h2 class="experiencia-sub-titulo project-title">Projeto 2</h2>
+            <div class="button-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/fersonaglio/Projeto'"
+              >
+                Github
+              </button>
+            </div>
           </div>
-        </div><!--fim detalhes-container color-container-->
-      </div><!--fim sobre container-->
-      </div><!--fim experiencia detalhes container-->
-  </section><!--fim section projetos-->
+          <!--fim detalhes-container color-container-->
 
-  <section id="contato">
-    <div class="titulo-contato">
-    <p class="section__txt__p1">Entre em</p>
-    <h1 class="titulo">Contato</h1>
-    </div><!--fim titulo-contato-->
-    <div class="contact-info-upper-container">
-      <div class="contact-info-container">
-        <img src="./assets/email.png" alt="Icone email" class="icon contact-icon email-icon">
-        <p><a href="mailto:sonaglio3@hotmail.com">sonaglio3@hotmail.com</a></p>
-      </div><!--fim contact-info-container-->
-      <div class="contact-info-container">
-        <img src="./assets/linkedin.png" alt="Icone inkedin" class="icon contact-icon">
-        <p><a href="https://www.linkedin.com/in/fernando-sonaglio0/" target="_blank">Linkedin</a></p>
-      </div><!--fim contact-info-container-->
-    </div><!--fim contact-info-upper-container-->
-  </section>
+          <div class="detalhes-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Projeto 3"
+                class="project-img"
+              />
+            </div>
+            <!--fim article container-->
+            <h2 class="experiencia-sub-titulo project-title">Projeto 3</h2>
+            <div class="button-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/fersonaglio/Weather-App'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <!--fim detalhes-container color-container-->
+        </div>
+        <!--fim sobre container-->
+      </div>
+      <!--fim experiencia detalhes container-->
+    </section>
+    <!--fim section projetos-->
 
-  <footer>
-    <nav>
-      <div class="nav-links-container">
-        <ul class="nav-links">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#experiencia">Experiência</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contato</a></li>
-        </ul><!--fim nav links-->
-      </div><!--fim nav-links-container-->
-    </nav>
-    <p>Copyright &#169; 2024 Fernando Sonaglio. Todos os direitos reservados</p>
-  </footer>
-  <script src="./script.js"></script>
-</body>
+    <section id="contato">
+      <div class="titulo-contato">
+        <p class="section__txt__p1">Entre em</p>
+        <h1 class="titulo">Contato</h1>
+      </div>
+      <!--fim titulo-contato-->
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Icone email"
+            class="icon contact-icon email-icon"
+          />
+          <p>
+            <a href="mailto:sonaglio3@hotmail.com">sonaglio3@hotmail.com</a>
+          </p>
+        </div>
+        <!--fim contact-info-container-->
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="Icone inkedin"
+            class="icon contact-icon"
+          />
+          <p>
+            <a
+              href="https://www.linkedin.com/in/fernando-sonaglio0/"
+              target="_blank"
+              >Linkedin</a
+            >
+          </p>
+        </div>
+        <!--fim contact-info-container-->
+      </div>
+      <!--fim contact-info-upper-container-->
+    </section>
+
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#experiencia">Experiência</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+          <!--fim nav links-->
+        </div>
+        <!--fim nav-links-container-->
+      </nav>
+      <p>
+        Copyright &#169; 2024 Fernando Sonaglio. Todos os direitos reservados
+      </p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
 </html>
