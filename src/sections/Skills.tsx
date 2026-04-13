@@ -63,7 +63,7 @@ const Skills = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="font-montserrat font-bold text-3xl sm:text-4xl text-foreground mb-4">
+          <h2 className="font-montserrat font-bold text-3xl sm:text-4xl text-foreground dark:text-white mb-4">
             MY SKILLS
           </h2>
           <div className="w-24 h-1 bg-accent-green mx-auto rounded-full" />
@@ -77,20 +77,20 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className={`${category.bgColor} rounded-3xl p-6 hover:shadow-lg transition-shadow duration-300 dark:opacity-80`}
+              className={`${category.bgColor} rounded-3xl p-6 hover:shadow-lg transition-shadow duration-300 dark:bg-opacity-20 dark:bg-gray-800`}
             >
-              <h3 className="font-montserrat font-bold text-xl text-foreground mb-6 text-center">
+              <h3 className="font-montserrat font-bold text-xl text-foreground dark:text-white mb-6 text-center">
                 {category.title}
               </h3>
               <div className="space-y-4">
                 {category.skills.map((skill, skillIndex) => (
                   <div
                     key={skillIndex}
-                    className="bg-card/80 backdrop-blur-sm rounded-xl p-4 flex items-center gap-4 hover:bg-card transition-colors border border-border"
+                    className="bg-card/90 dark:bg-gray-900/90 backdrop-blur-sm rounded-xl p-4 flex items-center gap-4 hover:bg-card transition-colors border border-border"
                   >
                     <div className={`${skill.color}`}>{skill.icon}</div>
                     <div className="flex-1">
-                      <h4 className="font-montserrat font-semibold text-foreground">
+                      <h4 className="font-montserrat font-semibold text-foreground dark:text-white">
                         {skill.name}
                       </h4>
                       <p className="text-sm text-muted-foreground">{skill.level}</p>

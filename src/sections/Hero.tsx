@@ -16,7 +16,7 @@ const Hero = () => {
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="font-montserrat font-bold text-4xl sm:text-5xl lg:text-6xl text-foreground leading-tight">
+              <h1 className="font-montserrat font-bold text-4xl sm:text-5xl lg:text-6xl text-foreground dark:text-white leading-tight">
                 FERNANDO SONAGLIO
                 <span className="block text-accent-teal">| FRONT-END DEVELOPER</span>
               </h1>

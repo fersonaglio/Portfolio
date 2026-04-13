@@ -61,7 +61,7 @@ const About = () => {
         {/* Section Header */}
         <div className="flex items-center justify-center gap-4 mb-16">
           <span className="pill-active bg-accent-teal">ABOUT ME</span>
-          <h2 className="font-montserrat font-bold text-3xl sm:text-4xl text-foreground">
+          <h2 className="font-montserrat font-bold text-3xl sm:text-4xl text-foreground dark:text-white">
             | FERNANDO SONAGLIO
           </h2>
         </div>
@@ -129,7 +129,7 @@ const About = () => {
 
           {/* Right Content - Illustration */}
           <div className="relative">
-            <div className="absolute inset-0 bg-gradient-to-br from-pastel-green/30 via-pastel-blue/30 to-pastel-pink/30 rounded-3xl blur-3xl" />
+            <div className="absolute inset-0 bg-gradient-to-br from-pastel-green/30 via-pastel-blue/30 to-pastel-pink/30 dark:from-pastel-green/10 dark:via-pastel-blue/10 dark:to-pastel-pink/10 rounded-3xl blur-3xl" />
             <div className="relative z-10 p-8">
               <DeveloperIsometric />
             </div>
