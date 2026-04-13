@@ -46,7 +46,7 @@ const Header = ({ activeSection, toggleTheme, isDark }: HeaderProps) => {
           {/* Logo */}
           <div className="flex items-center gap-2">
             <Terminal className="w-5 h-5 text-accent-teal" />
-            <span className="font-montserrat font-bold text-lg text-text-primary">
+            <span className="font-montserrat font-bold text-lg text-foreground">
               Fernando Sonaglio
             </span>
           </div>
@@ -101,9 +101,9 @@ const Header = ({ activeSection, toggleTheme, isDark }: HeaderProps) => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
-              <X className="w-6 h-6 text-text-primary" />
+              <X className="w-6 h-6 text-foreground" />
             ) : (
-              <Menu className="w-6 h-6 text-text-primary" />
+              <Menu className="w-6 h-6 text-foreground" />
             )}
           </button>
         </nav>
@@ -118,8 +118,8 @@ const Header = ({ activeSection, toggleTheme, isDark }: HeaderProps) => {
                   onClick={() => scrollToSection(link.href)}
                   className={`px-4 py-3 rounded-xl text-left font-medium transition-colors ${
                     activeSection === link.id
-                      ? 'bg-pastel-blue text-accent-teal'
-                      : 'hover:bg-gray-50 text-text-primary'
+                      ? 'bg-primary/20 text-primary'
+                      : 'hover:bg-muted/50 text-foreground'
                   }`}
                 >
                   {link.name}
@@ -129,7 +129,7 @@ const Header = ({ activeSection, toggleTheme, isDark }: HeaderProps) => {
               {/* Theme Toggle Mobile */}
               <button
                 onClick={toggleTheme}
-                className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 transition-colors text-text-primary"
+                className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-muted/50 transition-colors text-foreground"
               >
                 {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
                 {isDark ? 'Light Mode' : 'Dark Mode'}

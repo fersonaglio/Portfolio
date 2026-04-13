@@ -61,7 +61,7 @@ const About = () => {
         {/* Section Header */}
         <div className="flex items-center justify-center gap-4 mb-16">
           <span className="pill-active bg-accent-teal">ABOUT ME</span>
-          <h2 className="font-montserrat font-bold text-3xl sm:text-4xl text-text-primary">
+          <h2 className="font-montserrat font-bold text-3xl sm:text-4xl text-foreground">
             | FERNANDO SONAGLIO
           </h2>
         </div>
@@ -117,10 +117,10 @@ const About = () => {
                     className={`${skill.bgColor} rounded-2xl p-4 hover:scale-105 transition-transform duration-300 dark:opacity-80`}
                   >
                     <div className={`${skill.iconColor} mb-2`}>{skill.icon}</div>
-                    <h4 className="font-montserrat font-semibold text-sm text-text-primary mb-1">
+                    <h4 className="font-montserrat font-semibold text-sm text-foreground mb-1">
                       {skill.title}
                     </h4>
-                    <p className="text-xs text-text-secondary">{skill.description}</p>
+                    <p className="text-xs text-muted-foreground">{skill.description}</p>
                   </div>
                 ))}
               </div>

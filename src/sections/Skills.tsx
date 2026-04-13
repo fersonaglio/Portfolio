@@ -79,7 +79,7 @@ const Skills = () => {
               key={index}
               className={`${category.bgColor} rounded-3xl p-6 hover:shadow-lg transition-shadow duration-300 dark:opacity-80`}
             >
-              <h3 className="font-montserrat font-bold text-xl text-text-primary mb-6 text-center">
+              <h3 className="font-montserrat font-bold text-xl text-foreground mb-6 text-center">
                 {category.title}
               </h3>
               <div className="space-y-4">
@@ -90,10 +90,10 @@ const Skills = () => {
                   >
                     <div className={`${skill.color}`}>{skill.icon}</div>
                     <div className="flex-1">
-                      <h4 className="font-montserrat font-semibold text-text-primary">
+                      <h4 className="font-montserrat font-semibold text-foreground">
                         {skill.name}
                       </h4>
-                      <p className="text-sm text-text-secondary">{skill.level}</p>
+                      <p className="text-sm text-muted-foreground">{skill.level}</p>
                     </div>
                   </div>
                 ))}

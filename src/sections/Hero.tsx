@@ -16,11 +16,11 @@ const Hero = () => {
           {/* Left Content */}
           <div className="space-y-8">
             <div className="space-y-4">
-              <h1 className="font-montserrat font-bold text-4xl sm:text-5xl lg:text-6xl text-text-primary leading-tight">
+              <h1 className="font-montserrat font-bold text-4xl sm:text-5xl lg:text-6xl text-foreground leading-tight">
                 FERNANDO SONAGLIO
                 <span className="block text-accent-teal">| FRONT-END DEVELOPER</span>
               </h1>
-              <p className="text-lg sm:text-xl text-text-secondary max-w-lg">
+              <p className="text-lg sm:text-xl text-muted-foreground max-w-lg">
                 Front-End Developer with experience in React, JavaScript, and API integration. 
                 Also skilled in database administration with SQL, PostgreSQL, and Firebird.
               </p>
@@ -41,8 +41,8 @@ const Hero = () => {
                   <span className="text-2xl font-bold text-accent-teal">3+</span>
                 </div>
                 <div>
-                  <p className="text-sm text-text-secondary">Years of</p>
-                  <p className="font-semibold text-text-primary">Experience</p>
+                  <p className="text-sm text-muted-foreground">Years of</p>
+                  <p className="font-semibold text-foreground">Experience</p>
                 </div>
               </div>
               <div className="flex items-center gap-3">
@@ -50,8 +50,8 @@ const Hero = () => {
                   <span className="text-2xl font-bold text-accent-green">10+</span>
                 </div>
                 <div>
-                  <p className="text-sm text-text-secondary">Projects</p>
-                  <p className="font-semibold text-text-primary">Completed</p>
+                  <p className="text-sm text-muted-foreground">Projects</p>
+                  <p className="font-semibold text-foreground">Completed</p>
                 </div>
               </div>
             </div>

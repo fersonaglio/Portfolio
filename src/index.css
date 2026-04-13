@@ -86,6 +86,12 @@
   h1, h2, h3, h4, h5, h6 {
     @apply font-montserrat font-bold;
   }
+
+  /* Placeholder styling for inputs */
+  input::placeholder,
+  textarea::placeholder {
+    @apply text-muted-foreground/70;
+  }
 }
 
 @layer utilities {
@@ -96,6 +102,6 @@
     @apply px-4 py-2 rounded-full text-white text-sm font-medium;
   }
   .nav-link {
-    @apply text-text-primary hover:text-text-secondary transition-colors duration-300 text-sm font-medium;
+    @apply text-foreground hover:text-muted-foreground transition-colors duration-300 text-sm font-medium;
   }
 }
