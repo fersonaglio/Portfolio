@@ -98,7 +98,7 @@ const About = () => {
                   Education
                 </h3>
                 <p className="text-text-secondary">
-                  Bachelor's degree in Information Systems from UCEFF. Intermediate English with 
+                  Bachelor's degree in Information Systems from Estacio. Intermediate English with 
                   exchange experience in Ireland. Continuous focus on improving skills in web 
                   development and database administration.
                 </p>
