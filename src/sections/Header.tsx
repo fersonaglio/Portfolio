@@ -38,15 +38,15 @@ const Header = ({ activeSection, toggleTheme, isDark }: HeaderProps) => {
   return (
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        isScrolled ? 'bg-background/90 backdrop-blur-md shadow-sm' : 'bg-transparent'
+        isScrolled ? 'bg-white/90 backdrop-blur-md shadow-sm' : 'bg-transparent'
       }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <nav className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <Terminal className="w-5 h-5 text-primary" />
-            <span className="font-montserrat font-bold text-lg text-foreground">
+            <Terminal className="w-5 h-5 text-accent-teal" />
+            <span className="font-montserrat font-bold text-lg text-text-primary">
               Fernando Sonaglio
             </span>
           </div>
@@ -59,13 +59,13 @@ const Header = ({ activeSection, toggleTheme, isDark }: HeaderProps) => {
                 onClick={() => scrollToSection(link.href)}
                 className={`nav-link relative ${
                   activeSection === link.id
-                    ? 'text-primary'
+                    ? 'text-accent-teal'
                     : ''
                 }`}
               >
                 {link.name}
                 {activeSection === link.id && (
-                  <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary rounded-full" />
+                  <span className="absolute -bottom-1 left-0 right-0 h-0.5 bg-accent-teal rounded-full" />
                 )}
               </button>
             ))}
@@ -89,7 +89,7 @@ const Header = ({ activeSection, toggleTheme, isDark }: HeaderProps) => {
             {/* CTA Button */}
             <button
               onClick={() => scrollToSection('#contact')}
-              className="pill-active bg-primary hover:bg-primary/90 transition-colors"
+              className="pill-active bg-accent-teal hover:bg-accent-teal/90 transition-colors"
             >
               GET IN TOUCH
             </button>
@@ -101,9 +101,9 @@ const Header = ({ activeSection, toggleTheme, isDark }: HeaderProps) => {
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? (
-              <X className="w-6 h-6 text-foreground" />
+              <X className="w-6 h-6 text-text-primary" />
             ) : (
-              <Menu className="w-6 h-6 text-foreground" />
+              <Menu className="w-6 h-6 text-text-primary" />
             )}
           </button>
         </nav>
@@ -118,8 +118,8 @@ const Header = ({ activeSection, toggleTheme, isDark }: HeaderProps) => {
                   onClick={() => scrollToSection(link.href)}
                   className={`px-4 py-3 rounded-xl text-left font-medium transition-colors ${
                     activeSection === link.id
-                      ? 'bg-secondary text-primary'
-                      : 'hover:bg-secondary/50 text-foreground'
+                      ? 'bg-pastel-blue text-accent-teal'
+                      : 'hover:bg-gray-50 text-text-primary'
                   }`}
                 >
                   {link.name}
@@ -129,7 +129,7 @@ const Header = ({ activeSection, toggleTheme, isDark }: HeaderProps) => {
               {/* Theme Toggle Mobile */}
               <button
                 onClick={toggleTheme}
-                className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-secondary/50 transition-colors text-foreground"
+                className="flex items-center gap-3 px-4 py-3 rounded-xl hover:bg-gray-50 transition-colors text-text-primary"
               >
                 {isDark ? <Sun className="w-5 h-5" /> : <Moon className="w-5 h-5" />}
                 {isDark ? 'Light Mode' : 'Dark Mode'}
@@ -137,7 +137,7 @@ const Header = ({ activeSection, toggleTheme, isDark }: HeaderProps) => {
 
               <button
                 onClick={() => scrollToSection('#contact')}
-                className="mt-2 pill-active bg-primary text-center"
+                className="mt-2 pill-active bg-accent-teal text-center"
               >
                 GET IN TOUCH
               </button>

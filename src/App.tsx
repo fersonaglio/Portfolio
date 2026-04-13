@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react';
 import Header from './sections/Header';
 import Hero from './sections/Hero';
-import FeaturedProjects from './sections/FeaturedProjects';
-import About from './sections/About';
-import Skills from './sections/Skills';
 import Projects from './sections/Projects';
+import Skills from './sections/Skills';
+import About from './sections/About';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
 import { useTheme } from './hooks/useTheme';
@@ -35,11 +34,10 @@ function App() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-background transition-colors duration-300">
+    <div className="min-h-screen bg-bg-main transition-colors duration-300">
       <Header activeSection={activeSection} toggleTheme={toggleTheme} isDark={isDark} />
       <main>
         <Hero />
-        <FeaturedProjects />
         <Projects />
         <Skills />
         <About />

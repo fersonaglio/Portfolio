@@ -1,4 +1,4 @@
-import { ExternalLink, Github, Folder, Smartphone, Database, Settings } from 'lucide-react';
+import { ExternalLink, Github, Folder, Database, Settings, Cpu } from 'lucide-react';
 
 interface Project {
   id: number;
@@ -7,7 +7,6 @@ interface Project {
   image: string;
   technologies: string[];
   githubUrl: string;
-  liveUrl?: string;
   bgColor: string;
 }
 
@@ -21,11 +20,11 @@ const projects: Project[] = [
   {
     id: 1,
     title: 'Digital Clock',
-    description: 'A modern and responsive digital clock application displaying real-time.',
+    description: 'A modern and responsive digital clock application with real-time display.',
     image: '/project-1.png',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     githubUrl: 'https://github.com/fersonaglio/Projeto-Relogio',
-    bgColor: 'bg-blue-100 dark:bg-blue-900/30',
+    bgColor: 'bg-pastel-blue',
   },
   {
     id: 2,
@@ -34,16 +33,16 @@ const projects: Project[] = [
     image: '/project-2.png',
     technologies: ['React', 'Vite', 'CSS'],
     githubUrl: 'https://github.com/fersonaglio/Projeto',
-    bgColor: 'bg-pink-100 dark:bg-pink-900/30',
+    bgColor: 'bg-pastel-pink',
   },
   {
     id: 3,
     title: 'Weather App',
-    description: 'Weather forecast app with intuitive interface and real-time meteorological data.',
+    description: 'Weather forecast application with real-time data and intuitive interface.',
     image: '/project-3.png',
     technologies: ['JavaScript', 'API', 'CSS'],
     githubUrl: 'https://github.com/fersonaglio/Weather-App',
-    bgColor: 'bg-green-100 dark:bg-green-900/30',
+    bgColor: 'bg-pastel-green',
   },
   {
     id: 4,
@@ -52,7 +51,7 @@ const projects: Project[] = [
     image: '/project-1.png',
     technologies: ['React', 'Tailwind', 'TypeScript'],
     githubUrl: 'https://github.com/fersonaglio',
-    bgColor: 'bg-yellow-100 dark:bg-yellow-900/30',
+    bgColor: 'bg-pastel-yellow',
   },
 ];
 
@@ -73,7 +72,7 @@ const categories: Category[] = [
     description: 'REST APIs, ERP Integration',
   },
   {
-    icon: <Smartphone className="w-6 h-6" />,
+    icon: <Cpu className="w-6 h-6" />,
     title: 'IT Support',
     description: 'Technical Support Tier 1-3',
   },
@@ -96,18 +95,18 @@ const Projects = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="flex items-center justify-center gap-4 mb-16">
-          <span className="pill-active bg-green-500">PROJECTS</span>
-          <h2 className="font-montserrat font-bold text-3xl sm:text-4xl text-foreground">
+          <span className="pill-active bg-accent-green">PROJECTS</span>
+          <h2 className="font-montserrat font-bold text-3xl sm:text-4xl text-text-primary">
             | FERNANDO SONAGLIO
           </h2>
         </div>
 
-        {/* Projects Grid 2x2 */}
+        {/* Projects Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
           {projects.map((project) => (
             <div
               key={project.id}
-              className="group relative bg-card rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2"
+              className="group relative bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2"
             >
               {/* Image Container */}
               <div className={`relative h-56 ${project.bgColor} overflow-hidden`}>
@@ -126,27 +125,25 @@ const Projects = () => {
                     rel="noopener noreferrer"
                     className="p-3 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white transition-colors"
                   >
-                    <Github className="w-6 h-6 text-foreground" />
+                    <Github className="w-6 h-6 text-text-primary" />
                   </a>
-                  {project.liveUrl && (
-                    <a
-                      href={project.liveUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="p-3 bg-primary/90 backdrop-blur-sm rounded-full hover:bg-primary transition-colors"
-                    >
-                      <ExternalLink className="w-6 h-6 text-white" />
-                    </a>
-                  )}
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-3 bg-accent-teal/90 backdrop-blur-sm rounded-full hover:bg-accent-teal transition-colors"
+                  >
+                    <ExternalLink className="w-6 h-6 text-white" />
+                  </a>
                 </div>
               </div>
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="font-montserrat font-bold text-xl text-foreground mb-2">
+                <h3 className="font-montserrat font-bold text-xl text-text-primary mb-2">
                   {project.title}
                 </h3>
-                <p className="text-muted-foreground text-sm mb-4">
+                <p className="text-text-secondary text-sm mb-4">
                   {project.description}
                 </p>
 
@@ -156,7 +153,7 @@ const Projects = () => {
                     <span
                       key={tech}
                       className={`px-3 py-1 rounded-full text-xs font-medium ${
-                        techColors[tech] || 'bg-secondary text-foreground'
+                        techColors[tech] || 'bg-gray-100 text-gray-700'
                       }`}
                     >
                       {tech}
@@ -170,21 +167,21 @@ const Projects = () => {
 
         {/* Categories Footer */}
         <div className="relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 via-pink-500/20 to-green-500/20 dark:from-blue-500/10 dark:via-pink-500/10 dark:to-green-500/10 rounded-3xl opacity-50" />
-          <div className="relative bg-card/80 backdrop-blur-sm rounded-3xl p-8">
+          <div className="absolute inset-0 bg-gradient-to-r from-pastel-blue via-pastel-pink to-pastel-green rounded-3xl opacity-50" />
+          <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-8">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {categories.map((category, index) => (
                 <div
                   key={index}
-                  className="flex flex-col items-center text-center p-4 hover:bg-secondary/50 rounded-2xl transition-colors"
+                  className="flex flex-col items-center text-center p-4 hover:bg-white/50 rounded-2xl transition-colors"
                 >
-                  <div className="w-14 h-14 rounded-xl bg-orange-500/20 flex items-center justify-center mb-3 text-orange-500">
+                  <div className="w-14 h-14 rounded-xl bg-accent-coral/20 flex items-center justify-center mb-3 text-accent-coral">
                     {category.icon}
                   </div>
-                  <h4 className="font-montserrat font-semibold text-foreground mb-1">
+                  <h4 className="font-montserrat font-semibold text-text-primary mb-1">
                     {category.title}
                   </h4>
-                  <p className="text-sm text-muted-foreground">{category.description}</p>
+                  <p className="text-sm text-text-secondary">{category.description}</p>
                 </div>
               ))}
             </div>
