@@ -37,7 +37,7 @@ const Hero = () => {
             {/* Quick Stats */}
             <div className="flex flex-wrap gap-6 pt-4">
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-xl bg-pastel-blue flex items-center justify-center">
+                <div className="w-12 h-12 rounded-xl bg-pastel-blue flex items-center justify-center dark:bg-pastel-blue/20">
                   <span className="text-2xl font-bold text-accent-teal">3+</span>
                 </div>
                 <div>
@@ -46,7 +46,7 @@ const Hero = () => {
                 </div>
               </div>
               <div className="flex items-center gap-3">
-                <div className="w-12 h-12 rounded-xl bg-pastel-green flex items-center justify-center">
+                <div className="w-12 h-12 rounded-xl bg-pastel-green flex items-center justify-center dark:bg-pastel-green/20">
                   <span className="text-2xl font-bold text-accent-green">10+</span>
                 </div>
                 <div>

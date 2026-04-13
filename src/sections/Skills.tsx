@@ -59,15 +59,15 @@ const skillCategories: SkillCategory[] = [
 
 const Skills = () => {
   return (
-    <section id="skills" className="py-20 bg-white/50">
+    <section id="skills" className="py-20 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="font-montserrat font-bold text-3xl sm:text-4xl text-text-primary mb-4">
+          <h2 className="font-montserrat font-bold text-3xl sm:text-4xl text-foreground mb-4">
             MY SKILLS
           </h2>
           <div className="w-24 h-1 bg-accent-green mx-auto rounded-full" />
-          <p className="mt-4 text-text-secondary max-w-2xl mx-auto">
+          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
             SQL Database Administrator | IT Support | API Integration | Front-End Development
           </p>
         </div>
@@ -77,7 +77,7 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <div
               key={index}
-              className={`${category.bgColor} rounded-3xl p-6 hover:shadow-lg transition-shadow duration-300`}
+              className={`${category.bgColor} rounded-3xl p-6 hover:shadow-lg transition-shadow duration-300 dark:opacity-80`}
             >
               <h3 className="font-montserrat font-bold text-xl text-text-primary mb-6 text-center">
                 {category.title}
@@ -86,7 +86,7 @@ const Skills = () => {
                 {category.skills.map((skill, skillIndex) => (
                   <div
                     key={skillIndex}
-                    className="bg-white/80 backdrop-blur-sm rounded-xl p-4 flex items-center gap-4 hover:bg-white transition-colors"
+                    className="bg-card/80 backdrop-blur-sm rounded-xl p-4 flex items-center gap-4 hover:bg-card transition-colors border border-border"
                   >
                     <div className={`${skill.color}`}>{skill.icon}</div>
                     <div className="flex-1">
@@ -104,17 +104,17 @@ const Skills = () => {
 
         {/* Additional Info */}
         <div className="mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6">
-          <div className="bg-pastel-yellow rounded-2xl p-6 text-center">
+          <div className="bg-pastel-yellow rounded-2xl p-6 text-center dark:bg-pastel-yellow/20">
             <div className="text-3xl font-bold text-amber-600 mb-2">3+</div>
-            <p className="text-text-secondary">Years of Experience</p>
+            <p className="text-muted-foreground">Years of Experience</p>
           </div>
-          <div className="bg-pastel-blue rounded-2xl p-6 text-center">
+          <div className="bg-pastel-blue rounded-2xl p-6 text-center dark:bg-pastel-blue/20">
             <div className="text-3xl font-bold text-accent-teal mb-2">10+</div>
-            <p className="text-text-secondary">Projects Completed</p>
+            <p className="text-muted-foreground">Projects Completed</p>
           </div>
-          <div className="bg-pastel-pink rounded-2xl p-6 text-center">
+          <div className="bg-pastel-pink rounded-2xl p-6 text-center dark:bg-pastel-pink/20">
             <div className="text-3xl font-bold text-accent-pink mb-2">8+</div>
-            <p className="text-text-secondary">Technologies Mastered</p>
+            <p className="text-muted-foreground">Technologies Mastered</p>
           </div>
         </div>
       </div>
