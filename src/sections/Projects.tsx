@@ -96,7 +96,7 @@ const Projects = () => {
         {/* Section Header */}
         <div className="flex items-center justify-center gap-4 mb-16">
           <span className="pill-active bg-accent-green">PROJECTS</span>
-          <h2 className="font-montserrat font-bold text-3xl sm:text-4xl text-text-primary">
+          <h2 className="font-montserrat font-bold text-3xl sm:text-4xl text-foreground">
             | FERNANDO SONAGLIO
           </h2>
         </div>
@@ -106,7 +106,7 @@ const Projects = () => {
           {projects.map((project) => (
             <div
               key={project.id}
-              className="group relative bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2"
+              className="group relative bg-card rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-500 hover:-translate-y-2 border border-border"
             >
               {/* Image Container */}
               <div className={`relative h-56 ${project.bgColor} overflow-hidden`}>
@@ -123,9 +123,9 @@ const Projects = () => {
                     href={project.githubUrl}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="p-3 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white transition-colors"
+                    className="p-3 bg-background/90 backdrop-blur-sm rounded-full hover:bg-background transition-colors"
                   >
-                    <Github className="w-6 h-6 text-text-primary" />
+                    <Github className="w-6 h-6 text-foreground" />
                   </a>
                   <a
                     href={project.githubUrl}
@@ -140,10 +140,10 @@ const Projects = () => {
 
               {/* Content */}
               <div className="p-6">
-                <h3 className="font-montserrat font-bold text-xl text-text-primary mb-2">
+                <h3 className="font-montserrat font-bold text-xl text-card-foreground mb-2">
                   {project.title}
                 </h3>
-                <p className="text-text-secondary text-sm mb-4">
+                <p className="text-muted-foreground text-sm mb-4">
                   {project.description}
                 </p>
 
@@ -153,7 +153,7 @@ const Projects = () => {
                     <span
                       key={tech}
                       className={`px-3 py-1 rounded-full text-xs font-medium ${
-                        techColors[tech] || 'bg-gray-100 text-gray-700'
+                        techColors[tech] || 'bg-muted text-muted-foreground'
                       }`}
                     >
                       {tech}
@@ -167,21 +167,21 @@ const Projects = () => {
 
         {/* Categories Footer */}
         <div className="relative">
-          <div className="absolute inset-0 bg-gradient-to-r from-pastel-blue via-pastel-pink to-pastel-green rounded-3xl opacity-50" />
-          <div className="relative bg-white/80 backdrop-blur-sm rounded-3xl p-8">
+          <div className="absolute inset-0 bg-gradient-to-r from-pastel-blue via-pastel-pink to-pastel-green rounded-3xl opacity-50 dark:opacity-20" />
+          <div className="relative bg-card/80 backdrop-blur-sm rounded-3xl p-8 border border-border">
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {categories.map((category, index) => (
                 <div
                   key={index}
-                  className="flex flex-col items-center text-center p-4 hover:bg-white/50 rounded-2xl transition-colors"
+                  className="flex flex-col items-center text-center p-4 hover:bg-muted/50 rounded-2xl transition-colors"
                 >
                   <div className="w-14 h-14 rounded-xl bg-accent-coral/20 flex items-center justify-center mb-3 text-accent-coral">
                     {category.icon}
                   </div>
-                  <h4 className="font-montserrat font-semibold text-text-primary mb-1">
+                  <h4 className="font-montserrat font-semibold text-foreground mb-1">
                     {category.title}
                   </h4>
-                  <p className="text-sm text-text-secondary">{category.description}</p>
+                  <p className="text-sm text-muted-foreground">{category.description}</p>
                 </div>
               ))}
             </div>

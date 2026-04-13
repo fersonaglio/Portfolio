@@ -71,35 +71,35 @@ const About = () => {
           <div className="space-y-8">
             {/* About Cards */}
             <div className="space-y-6">
-              <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="font-montserrat font-bold text-lg text-text-primary mb-2">
+              <div className="bg-card rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow border border-border">
+                <h3 className="font-montserrat font-bold text-lg text-card-foreground mb-2">
                   About Me
                 </h3>
-                <p className="text-text-secondary">
-                  SQL Database Administrator & IT Systems Professional with 3+ years of experience 
-                  in database administration, API integration, technical support, and front-end development. 
+                <p className="text-muted-foreground">
+                  SQL Database Administrator & IT Systems Professional with 3+ years of experience
+                  in database administration, API integration, technical support, and front-end development.
                   Currently at Questor Sistemas, where I progressed from Junior to Mid-Level in under a year.
                 </p>
               </div>
 
-              <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="font-montserrat font-bold text-lg text-text-primary mb-2">
+              <div className="bg-card rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow border border-border">
+                <h3 className="font-montserrat font-bold text-lg text-card-foreground mb-2">
                   Professional Experience
                 </h3>
-                <p className="text-text-secondary">
-                  I administer, monitor, and optimize corporate database environments, ensuring high 
-                  availability and performance. I perform database conversions, third-party ERP integrations 
+                <p className="text-muted-foreground">
+                  I administer, monitor, and optimize corporate database environments, ensuring high
+                  availability and performance. I perform database conversions, third-party ERP integrations
                   via REST API, and develop custom SQL reports.
                 </p>
               </div>
 
-              <div className="bg-white rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
-                <h3 className="font-montserrat font-bold text-lg text-text-primary mb-2">
+              <div className="bg-card rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow border border-border">
+                <h3 className="font-montserrat font-bold text-lg text-card-foreground mb-2">
                   Education
                 </h3>
-                <p className="text-text-secondary">
-                  Bachelor's degree in Information Systems from Estacio. Intermediate English with 
-                  exchange experience in Ireland. Continuous focus on improving skills in web 
+                <p className="text-muted-foreground">
+                  Bachelor's degree in Information Systems from Estacio. Intermediate English with
+                  exchange experience in Ireland. Continuous focus on improving skills in web
                   development and database administration.
                 </p>
               </div>
@@ -107,14 +107,14 @@ const About = () => {
 
             {/* Soft Skills */}
             <div>
-              <h3 className="font-montserrat font-bold text-xl text-text-primary mb-4">
+              <h3 className="font-montserrat font-bold text-xl text-foreground mb-4">
                 Core Competencies
               </h3>
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                 {softSkills.map((skill, index) => (
                   <div
                     key={index}
-                    className={`${skill.bgColor} rounded-2xl p-4 hover:scale-105 transition-transform duration-300`}
+                    className={`${skill.bgColor} rounded-2xl p-4 hover:scale-105 transition-transform duration-300 dark:opacity-80`}
                   >
                     <div className={`${skill.iconColor} mb-2`}>{skill.icon}</div>
                     <h4 className="font-montserrat font-semibold text-sm text-text-primary mb-1">

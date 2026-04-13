@@ -32,15 +32,15 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-white/50">
+    <section id="contact" className="py-20 bg-muted/30">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="font-montserrat font-bold text-3xl sm:text-4xl text-text-primary mb-4">
+          <h2 className="font-montserrat font-bold text-3xl sm:text-4xl text-foreground mb-4">
             GET IN TOUCH
           </h2>
           <div className="w-24 h-1 bg-accent-teal mx-auto rounded-full" />
-          <p className="mt-4 text-text-secondary max-w-2xl mx-auto">
+          <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
             I'd love to hear from you! Feel free to reach out for opportunities or just to connect.
           </p>
         </div>
@@ -48,22 +48,22 @@ const Contact = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Info */}
           <div className="space-y-8">
-            <div className="bg-white rounded-3xl p-8 shadow-sm">
-              <h3 className="font-montserrat font-bold text-xl text-text-primary mb-6">
+            <div className="bg-card rounded-3xl p-8 shadow-sm border border-border">
+              <h3 className="font-montserrat font-bold text-xl text-card-foreground mb-6">
                 Contact Information
               </h3>
               
               <div className="space-y-6">
                 <a
                   href="mailto:sonaglio3@gmail.com"
-                  className="flex items-center gap-4 p-4 bg-pastel-blue rounded-2xl hover:bg-pastel-blue/80 transition-colors group"
+                  className="flex items-center gap-4 p-4 bg-pastel-blue rounded-2xl hover:bg-pastel-blue/80 transition-colors group dark:bg-pastel-blue/20"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center text-accent-teal group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-xl bg-background flex items-center justify-center text-accent-teal group-hover:scale-110 transition-transform">
                     <Mail className="w-6 h-6" />
                   </div>
                   <div>
-                    <p className="text-sm text-text-secondary">Email</p>
-                    <p className="font-semibold text-text-primary">sonaglio3@gmail.com</p>
+                    <p className="text-sm text-muted-foreground">Email</p>
+                    <p className="font-semibold text-foreground">sonaglio3@gmail.com</p>
                   </div>
                 </a>
 
@@ -71,14 +71,14 @@ const Contact = () => {
                   href="https://www.linkedin.com/in/fernando-sonaglio0/"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 bg-pastel-pink rounded-2xl hover:bg-pastel-pink/80 transition-colors group"
+                  className="flex items-center gap-4 p-4 bg-pastel-pink rounded-2xl hover:bg-pastel-pink/80 transition-colors group dark:bg-pastel-pink/20"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center text-accent-pink group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-xl bg-background flex items-center justify-center text-accent-pink group-hover:scale-110 transition-transform">
                     <Linkedin className="w-6 h-6" />
                   </div>
                   <div>
-                    <p className="text-sm text-text-secondary">LinkedIn</p>
-                    <p className="font-semibold text-text-primary">Fernando Sonaglio</p>
+                    <p className="text-sm text-muted-foreground">LinkedIn</p>
+                    <p className="font-semibold text-foreground">Fernando Sonaglio</p>
                   </div>
                 </a>
 
@@ -86,24 +86,24 @@ const Contact = () => {
                   href="https://github.com/fersonaglio"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 bg-pastel-green rounded-2xl hover:bg-pastel-green/80 transition-colors group"
+                  className="flex items-center gap-4 p-4 bg-pastel-green rounded-2xl hover:bg-pastel-green/80 transition-colors group dark:bg-pastel-green/20"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center text-accent-green group-hover:scale-110 transition-transform">
+                  <div className="w-12 h-12 rounded-xl bg-background flex items-center justify-center text-accent-green group-hover:scale-110 transition-transform">
                     <Github className="w-6 h-6" />
                   </div>
                   <div>
-                    <p className="text-sm text-text-secondary">GitHub</p>
-                    <p className="font-semibold text-text-primary">@fersonaglio</p>
+                    <p className="text-sm text-muted-foreground">GitHub</p>
+                    <p className="font-semibold text-foreground">@fersonaglio</p>
                   </div>
                 </a>
 
-                <div className="flex items-center gap-4 p-4 bg-pastel-yellow rounded-2xl">
-                  <div className="w-12 h-12 rounded-xl bg-white flex items-center justify-center text-amber-600">
+                <div className="flex items-center gap-4 p-4 bg-pastel-yellow rounded-2xl dark:bg-pastel-yellow/20">
+                  <div className="w-12 h-12 rounded-xl bg-background flex items-center justify-center text-amber-600">
                     <MapPin className="w-6 h-6" />
                   </div>
                   <div>
-                    <p className="text-sm text-text-secondary">Location</p>
-                    <p className="font-semibold text-text-primary">Chapecó, SC - Brazil</p>
+                    <p className="text-sm text-muted-foreground">Location</p>
+                    <p className="font-semibold text-foreground">Chapecó, SC - Brazil</p>
                   </div>
                 </div>
               </div>
@@ -111,14 +111,14 @@ const Contact = () => {
           </div>
 
           {/* Contact Form */}
-          <div className="bg-white rounded-3xl p-8 shadow-sm">
-            <h3 className="font-montserrat font-bold text-xl text-text-primary mb-6">
+          <div className="bg-card rounded-3xl p-8 shadow-sm border border-border">
+            <h3 className="font-montserrat font-bold text-xl text-card-foreground mb-6">
               Send a Message
             </h3>
 
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium text-text-secondary mb-2">
+                <label htmlFor="name" className="block text-sm font-medium text-muted-foreground mb-2">
                   Name
                 </label>
                 <input
@@ -128,13 +128,13 @@ const Contact = () => {
                   value={formData.name}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-accent-teal focus:ring-2 focus:ring-accent-teal/20 outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground focus:border-accent-teal focus:ring-2 focus:ring-accent-teal/20 outline-none transition-all"
                   placeholder="Your name"
                 />
               </div>
 
               <div>
-                <label htmlFor="email" className="block text-sm font-medium text-text-secondary mb-2">
+                <label htmlFor="email" className="block text-sm font-medium text-muted-foreground mb-2">
                   Email
                 </label>
                 <input
@@ -144,13 +144,13 @@ const Contact = () => {
                   value={formData.email}
                   onChange={handleChange}
                   required
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-accent-teal focus:ring-2 focus:ring-accent-teal/20 outline-none transition-all"
+                  className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground focus:border-accent-teal focus:ring-2 focus:ring-accent-teal/20 outline-none transition-all"
                   placeholder="your@email.com"
                 />
               </div>
 
               <div>
-                <label htmlFor="message" className="block text-sm font-medium text-text-secondary mb-2">
+                <label htmlFor="message" className="block text-sm font-medium text-muted-foreground mb-2">
                   Message
                 </label>
                 <textarea
@@ -160,7 +160,7 @@ const Contact = () => {
                   onChange={handleChange}
                   required
                   rows={4}
-                  className="w-full px-4 py-3 rounded-xl border border-gray-200 focus:border-accent-teal focus:ring-2 focus:ring-accent-teal/20 outline-none transition-all resize-none"
+                  className="w-full px-4 py-3 rounded-xl border border-input bg-background text-foreground focus:border-accent-teal focus:ring-2 focus:ring-accent-teal/20 outline-none transition-all resize-none"
                   placeholder="Your message..."
                 />
               </div>
