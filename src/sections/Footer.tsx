@@ -1,7 +1,16 @@
 import { Terminal, Heart, Linkedin, Github, Mail } from 'lucide-react';
 
+// Obfuscated contact data
+const ENCODED_EMAIL = 'c29uYWdsaW8zQGdtYWlsLmNvbQ==';
+const ENCODED_PHONE = 'KzU1ICg0OSkgOTk5MzQtNDg4Mg==';
+
 const Footer = () => {
   const currentYear = new Date().getFullYear();
+
+  const handleEmailClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    window.location.href = `mailto:${atob(ENCODED_EMAIL)}`;
+  };
 
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href);
@@ -31,7 +40,6 @@ const Footer = () => {
             <p className="text-gray-400 max-w-md leading-relaxed text-sm sm:text-base">
               IT Systems & Database Administrator with 3+ years of experience. 
               Passionate about creating digital experiences and optimizing database performance. 
-              Open to relocation to the UK.
             </p>
             
             {/* Social Links */}
@@ -54,13 +62,13 @@ const Footer = () => {
               >
                 <Github className="w-5 h-5" />
               </a>
-              <a
-                href="mailto:sonaglio3@gmail.com"
+              <button
+                onClick={handleEmailClick}
                 className="w-10 h-10 rounded-full bg-gray-800 hover:bg-red-500 flex items-center justify-center text-gray-400 hover:text-white transition-colors"
                 aria-label="Email"
               >
                 <Mail className="w-5 h-5" />
-              </a>
+              </button>
             </div>
           </div>
 
@@ -89,20 +97,22 @@ const Footer = () => {
               Contact
             </h4>
             <div className="space-y-3 text-sm">
+              <button
+                onClick={handleEmailClick}
+                className="block text-gray-400 hover:text-white transition-colors text-left"
+              >
+                Send me an email
+              </button>
               <a
-                href="mailto:sonaglio3@gmail.com"
+                href={`https://wa.me/${atob(ENCODED_PHONE).replace(/\D/g, '')}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="block text-gray-400 hover:text-white transition-colors"
               >
-                sonaglio3@gmail.com
-              </a>
-              <a
-                href="tel:+5549999344882"
-                className="block text-gray-400 hover:text-white transition-colors"
-              >
-                +55 (49) 99934-4882
+                WhatsApp
               </a>
               <p className="text-gray-400">
-                Chapecó, SC - Brazil
+                Available for opportunities
               </p>
             </div>
           </div>
