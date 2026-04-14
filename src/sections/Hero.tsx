@@ -58,9 +58,8 @@ const Hero = () => {
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </button>
               <a
-                href="https://drive.google.com/file/d/1vIhj9zL3zX9z9z9z9z9z9z9z9z9z9z9z/view?usp=sharing"
-                target="_blank"
-                rel="noopener noreferrer"
+                href="/CV.pdf"
+                download="Fernando_Sonaglio_CV.pdf"
                 className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3 sm:py-4 bg-white dark:bg-gray-800 text-text-primary dark:text-white font-montserrat font-semibold rounded-full border-2 border-gray-200 dark:border-gray-700 hover:border-accent-teal dark:hover:border-teal-500 transition-all duration-300"
               >
                 DOWNLOAD CV
