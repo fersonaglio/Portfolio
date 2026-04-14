@@ -45,10 +45,10 @@ const AboutCards = () => {
   ];
 
   return (
-    <section ref={sectionRef} className="py-20 bg-background relative overflow-hidden">
+    <section ref={sectionRef} className="py-20 bg-white relative overflow-hidden">
       {/* Gradient Line */}
       <div className="absolute left-1/2 top-0 bottom-0 w-1 gradient-line transform -translate-x-1/2 hidden lg:block" />
-
+      
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {cards.map((card, index) => (
@@ -57,7 +57,7 @@ const AboutCards = () => {
               className={`animate-card opacity-0 translate-y-10 transition-all duration-700 ease-out`}
               style={{ transitionDelay: `${index * 200}ms` }}
             >
-              <div className="bg-card rounded-2xl overflow-hidden shadow-card hover:shadow-xl transition-shadow duration-300 border border-border">
+              <div className="bg-white rounded-2xl overflow-hidden shadow-card hover:shadow-xl transition-shadow duration-300 border border-gray-100">
                 <div className="h-48 overflow-hidden">
                   <img
                     src={card.image}
@@ -69,8 +69,8 @@ const AboutCards = () => {
                   <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center text-white mb-4">
                     {card.icon}
                   </div>
-                  <h3 className="text-xl font-bold text-card-foreground mb-3">{card.title}</h3>
-                  <p className="text-muted-foreground text-sm leading-relaxed">{card.description}</p>
+                  <h3 className="text-xl font-bold text-gray-900 mb-3">{card.title}</h3>
+                  <p className="text-gray-600 text-sm leading-relaxed">{card.description}</p>
                 </div>
               </div>
             </div>

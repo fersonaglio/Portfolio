@@ -10,7 +10,7 @@ import { useTheme } from './hooks/useTheme';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
-  const { toggleTheme, isDark } = useTheme();
+  const { toggleTheme, isDark, mounted } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,8 +33,17 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
+  // Prevent flash of wrong theme
+  if (!mounted) {
+    return (
+      <div className="min-h-screen bg-bg-main flex items-center justify-center">
+        <div className="w-8 h-8 border-4 border-accent-teal border-t-transparent rounded-full animate-spin"></div>
+      </div>
+    );
+  }
+
   return (
-    <div className="min-h-screen bg-bg-main transition-colors duration-300">
+    <div className="min-h-screen bg-bg-main dark:bg-gray-900 transition-colors duration-300">
       <Header activeSection={activeSection} toggleTheme={toggleTheme} isDark={isDark} />
       <main>
         <Hero />

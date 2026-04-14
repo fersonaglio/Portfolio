@@ -56,11 +56,11 @@ module.exports = {
           coral: '#FFAB91',
         },
         text: {
-          primary: "hsl(var(--text-primary))",
-          secondary: "hsl(var(--text-secondary))",
+          primary: '#1A1A1A',
+          secondary: '#555555',
         },
         bg: {
-          main: "hsl(var(--bg-main))",
+          main: '#F8F9FA',
         }
       },
       borderRadius: {

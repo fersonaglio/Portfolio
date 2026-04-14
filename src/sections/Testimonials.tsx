@@ -15,12 +15,12 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 bg-muted/30">
+    <section className="py-20 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">
-            What People <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-blue-500">Say</span>
+          <h2 className="text-4xl font-bold text-gray-900 mb-4">
+            What People <span className="text-gradient">Say</span>
           </h2>
         </div>
 
@@ -28,23 +28,23 @@ const Testimonials = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="bg-card rounded-3xl p-8 border border-border relative shadow-sm"
+              className="bg-white rounded-3xl p-8 card-border relative"
             >
               <div className="absolute -top-4 left-8 w-8 h-8 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg flex items-center justify-center">
                 <Quote className="w-4 h-4 text-white" />
               </div>
-
-              <p className="text-muted-foreground leading-relaxed mb-6 pt-4">
+              
+              <p className="text-gray-700 leading-relaxed mb-6 pt-4">
                 "{testimonial.quote}"
               </p>
-
+              
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-purple-500 to-blue-500 flex items-center justify-center text-white font-bold">
                   {testimonial.author.charAt(0)}
                 </div>
                 <div>
-                  <h4 className="font-semibold text-card-foreground">{testimonial.author}</h4>
-                  <p className="text-sm text-muted-foreground">{testimonial.role}</p>
+                  <h4 className="font-semibold text-gray-900">{testimonial.author}</h4>
+                  <p className="text-sm text-gray-500">{testimonial.role}</p>
                 </div>
               </div>
             </div>
