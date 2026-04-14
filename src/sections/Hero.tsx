@@ -1,4 +1,4 @@
-import { ArrowRight, MapPin, Briefcase, GraduationCap } from 'lucide-react';
+import { ArrowRight, Briefcase, GraduationCap } from 'lucide-react';
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -17,7 +17,7 @@ const Hero = () => {
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-pastel-blue dark:bg-blue-900/50 rounded-full">
               <span className="w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
-              <span className="text-sm font-medium text-blue-700 dark:text-blue-300">Available for opportunities</span>
+              <span className="text-sm font-medium text-blue-700 dark:text-blue-300">Exploring new challenges</span>
             </div>
 
             {/* Name & Title */}
@@ -38,10 +38,6 @@ const Hero = () => {
 
             {/* Info Tags */}
             <div className="flex flex-wrap justify-center lg:justify-start gap-3">
-              <div className="flex items-center gap-2 px-3 py-1.5 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
-                <MapPin className="w-4 h-4 text-accent-teal dark:text-teal-400" />
-                <span className="text-sm text-text-secondary dark:text-gray-300">Chapecó, Brazil</span>
-              </div>
               <div className="flex items-center gap-2 px-3 py-1.5 bg-white dark:bg-gray-800 rounded-lg shadow-sm">
                 <Briefcase className="w-4 h-4 text-accent-pink dark:text-pink-400" />
                 <span className="text-sm text-text-secondary dark:text-gray-300">3+ Years Exp.</span>
@@ -120,8 +116,8 @@ const Hero = () => {
                 {/* Floating badge */}
                 <div className="absolute -bottom-4 -left-4 bg-white dark:bg-gray-800 rounded-xl p-3 shadow-lg">
                   <div className="flex items-center gap-2">
-                    <div className="w-3 h-3 bg-green-500 rounded-full animate-pulse"></div>
-                    <span className="text-sm font-medium text-text-primary dark:text-white">Open to work</span>
+                    <div className="w-3 h-3 bg-blue-500 rounded-full"></div>
+                    <span className="text-sm font-medium text-text-primary dark:text-white">Always learning</span>
                   </div>
                 </div>
                 

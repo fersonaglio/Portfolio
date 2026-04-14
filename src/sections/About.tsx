@@ -128,19 +128,19 @@ const About = () => {
               <ul className="space-y-3">
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 bg-accent-teal dark:bg-teal-400 rounded-full mt-2 flex-shrink-0"></span>
-                  <span className="text-text-secondary dark:text-gray-300">Administer and monitor production SQL Server, PostgreSQL, and Firebird environments for <strong className="text-text-primary dark:text-white">50+ corporate clients</strong></span>
+                  <span className="text-text-secondary dark:text-gray-300">Support and maintain SQL databases for multiple clients</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 bg-accent-pink dark:bg-pink-400 rounded-full mt-2 flex-shrink-0"></span>
-                  <span className="text-text-secondary dark:text-gray-300">Lead <strong className="text-text-primary dark:text-white">zero-downtime database migrations</strong> and major version upgrades</span>
+                  <span className="text-text-secondary dark:text-gray-300">Assist with database updates and routine maintenance tasks</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 bg-accent-green dark:bg-green-400 rounded-full mt-2 flex-shrink-0"></span>
-                  <span className="text-text-secondary dark:text-gray-300">Develop <strong className="text-text-primary dark:text-white">10+ custom SQL reports and BI dashboards</strong> monthly</span>
+                  <span className="text-text-secondary dark:text-gray-300">Create SQL queries and reports based on client requirements</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="w-2 h-2 bg-accent-coral dark:bg-orange-400 rounded-full mt-2 flex-shrink-0"></span>
-                  <span className="text-text-secondary dark:text-gray-300">Designed and deployed <strong className="text-text-primary dark:text-white">3 complete client websites</strong> using React with sub-2s load times</span>
+                  <span className="text-text-secondary dark:text-gray-300">Building responsive web interfaces with React in personal projects</span>
                 </li>
               </ul>
             </div>
@@ -212,10 +212,10 @@ const About = () => {
             <div className="animate-card opacity-0 translate-y-8 transition-all duration-700 delay-300 bg-gradient-to-r from-pastel-blue via-pastel-pink to-pastel-green rounded-2xl p-6">
               <div className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-xl p-4">
                 <p className="text-text-primary dark:text-white font-medium text-center">
-                  🌍 Open to relocation to the United Kingdom
+                  🌍 Interested in international opportunities
                 </p>
                 <p className="text-text-secondary dark:text-gray-300 text-sm text-center mt-1">
-                  Eligible for Skilled Worker Visa sponsorship
+                  Curious about roles in different markets
                 </p>
               </div>
             </div>
