@@ -58,6 +58,38 @@ const projects = [
     className: "md:col-span-4",
     tech: ["React", "Framer Motion", "Tailwind"],
   },
+  {
+    title: "NEXUS",
+    description: "AI Infrastructure Wrapper. Developed a sophisticated local environment for OpenCode with seamless Ollama integration, enabling efficient LLM orchestration in isolated systems.",
+    header: <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-sm overflow-hidden border border-white/5 relative group">
+      <img 
+        src="/nexus-mockup.png" 
+        alt="NEXUS AI Infrastructure" 
+        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+    </div>,
+    icon: <Cpu className="h-4 w-4 text-emerald-500" />,
+    className: "md:col-span-6",
+    tech: ["Ollama", "LLM", "Infrastructure"],
+    href: "https://github.com/fersonaglio/NEXUS",
+  },
+  {
+    title: "Prisma Backend Engine",
+    description: "Robust data persistence layer. Engineered a high-performance API using Prisma ORM and MongoDB, focusing on type-safe database interactions and scalable architecture.",
+    header: <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-sm overflow-hidden border border-white/5 relative group">
+      <img 
+        src="/api-mockup.png" 
+        alt="Prisma API Engine" 
+        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
+    </div>,
+    icon: <Database className="h-4 w-4 text-blue-500" />,
+    className: "md:col-span-6",
+    tech: ["Node.js", "Prisma", "MongoDB", "TypeScript"],
+    href: "https://github.com/fersonaglio/API",
+  },
 ];
 
 const Projects = () => {
