@@ -58,12 +58,22 @@
 
 @layer utilities {
   .industrial-border {
-    @apply border border-border;
+    @apply border border-border transition-all duration-300;
+  }
+  .border-glow {
+    @apply relative overflow-hidden transition-all duration-500;
+  }
+  .border-glow:hover {
+    @apply border-white/20;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.03);
   }
   .glass-card {
-    @apply bg-white/5 backdrop-blur-sm border border-white/10;
+    @apply bg-white/[0.02] backdrop-blur-md border border-white/5;
+  }
+  .glass-hover {
+    @apply hover:bg-white/[0.05] transition-all duration-300;
   }
   .mono-detail {
-    @apply font-mono text-[10px] uppercase tracking-widest text-muted-foreground;
+    @apply font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground opacity-70;
   }
 }

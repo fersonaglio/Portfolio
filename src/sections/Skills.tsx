@@ -8,6 +8,8 @@ import {
   ShieldCheck
 } from 'lucide-react';
 import { motion } from 'framer-motion';
+import { cn } from '../lib/utils';
+import React from 'react';
 
 const skillCategories = [
   {
@@ -22,7 +24,7 @@ const skillCategories = [
   },
   {
     title: "Database Architectures",
-    icon: <Database className="w-4 h-4" />,
+    icon: <Database className="h-4 w-4" />,
     skills: [
       { name: "PostgreSQL", level: "L5 / Expert", tech: "Optimization, Indexing" },
       { name: "SQL Server", level: "L5 / Expert", tech: "T-SQL, Procedures" },
@@ -32,7 +34,7 @@ const skillCategories = [
   },
   {
     title: "System Operations",
-    icon: <Settings className="w-4 h-4" />,
+    icon: <Settings className="h-4 w-4" />,
     skills: [
       { name: "Windows Server", level: "L4 / Advanced", tech: "AD, IIS, Security" },
       { name: "IT Support T1-T3", level: "L5 / Expert", tech: "Critical Infrastructure" },
@@ -41,6 +43,49 @@ const skillCategories = [
     ]
   }
 ];
+
+// Compound Components for Skills Matrix
+const SkillItem = ({ name, level, tech }: { name: string; level: string; tech: string }) => (
+  <div className="group p-4 border-glow glass-card glass-hover">
+    <div className="flex justify-between items-start mb-2">
+      <span className="font-medium text-sm text-foreground">{name}</span>
+      <span className="font-mono text-[8px] text-emerald-500 uppercase tracking-tighter bg-emerald-500/5 px-2 py-0.5 border border-emerald-500/10">
+        {level}
+      </span>
+    </div>
+    <p className="text-[9px] font-mono text-muted-foreground leading-tight uppercase tracking-wider opacity-60">
+      {tech}
+    </p>
+  </div>
+);
+
+const SkillCategory = ({ title, icon, children, delay }: { title: string; icon: React.ReactNode; children: React.ReactNode; delay: number }) => (
+  <motion.div 
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ delay }}
+    viewport={{ once: true }}
+    className="space-y-6"
+  >
+    <div className="flex items-center gap-3 pb-4 border-b border-white/5">
+      <div className="text-muted-foreground">{icon}</div>
+      <h3 className="font-mono text-[10px] uppercase tracking-[0.2em] font-bold text-foreground/80">{title}</h3>
+    </div>
+    <div className="space-y-3">
+      {children}
+    </div>
+  </motion.div>
+);
+
+const SystemStat = ({ icon, label, value }: { icon: React.ReactNode; label: string; value: string }) => (
+  <div className="flex items-center gap-3 px-6 py-3 border-glow glass-card glass-hover">
+    <div className="text-muted-foreground">{icon}</div>
+    <div className="flex flex-col">
+      <span className="font-mono text-[9px] text-muted-foreground uppercase tracking-widest">{label}</span>
+      <span className="font-semibold text-xs tracking-tight">{value}</span>
+    </div>
+  </div>
+);
 
 const Skills = () => {
   return (
@@ -58,61 +103,36 @@ const Skills = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {skillCategories.map((category, idx) => (
-            <motion.div 
-              key={idx}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ delay: idx * 0.1 }}
-              viewport={{ once: true }}
-              className="space-y-6"
+            <SkillCategory 
+              key={idx} 
+              title={category.title} 
+              icon={category.icon}
+              delay={idx * 0.1}
             >
-              <div className="flex items-center gap-3 pb-4 border-b border-border">
-                {category.icon}
-                <h3 className="font-mono text-xs uppercase tracking-widest font-bold">{category.title}</h3>
-              </div>
-
-              <div className="space-y-4">
-                {category.skills.map((skill, sIdx) => (
-                  <div key={sIdx} className="group p-4 industrial-border bg-white/5 hover:bg-white/10 transition-colors">
-                    <div className="flex justify-between items-start mb-2">
-                      <span className="font-medium text-sm">{skill.name}</span>
-                      <span className="font-mono text-[9px] text-emerald-500 uppercase tracking-tighter bg-emerald-500/10 px-2 py-0.5 rounded-sm">
-                        {skill.level}
-                      </span>
-                    </div>
-                    <p className="text-[10px] font-mono text-muted-foreground leading-tight uppercase tracking-wider">
-                      {skill.tech}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </motion.div>
+              {category.skills.map((skill, sIdx) => (
+                <SkillItem key={sIdx} {...skill} />
+              ))}
+            </SkillCategory>
           ))}
         </div>
 
         {/* System Stats Badge */}
         <div className="mt-20 flex flex-wrap gap-4 justify-center">
-          <div className="flex items-center gap-3 px-6 py-3 industrial-border bg-white/5">
-            <ShieldCheck className="w-4 h-4 text-muted-foreground" />
-            <div className="flex flex-col">
-              <span className="font-mono text-[10px] text-muted-foreground uppercase">Infrastructure</span>
-              <span className="font-bold text-sm">50+ Corporate Clients</span>
-            </div>
-          </div>
-          <div className="flex items-center gap-3 px-6 py-3 industrial-border bg-white/5">
-            <Terminal className="w-4 h-4 text-muted-foreground" />
-            <div className="flex flex-col">
-              <span className="font-mono text-[10px] text-muted-foreground uppercase">Runtime</span>
-              <span className="font-bold text-sm">3+ Years Professional</span>
-            </div>
-          </div>
-          <div className="flex items-center gap-3 px-6 py-3 industrial-border bg-white/5">
-            <Globe className="w-4 h-4 text-muted-foreground" />
-            <div className="flex flex-col">
-              <span className="font-mono text-[10px] text-muted-foreground uppercase">Communication</span>
-              <span className="font-bold text-sm">English B1 [Ireland]</span>
-            </div>
-          </div>
+          <SystemStat 
+            icon={<ShieldCheck className="w-4 h-4" />} 
+            label="Infrastructure" 
+            value="50+ Corporate Clients" 
+          />
+          <SystemStat 
+            icon={<Terminal className="w-4 h-4" />} 
+            label="Runtime" 
+            value="3+ Years Professional" 
+          />
+          <SystemStat 
+            icon={<Globe className="w-4 h-4" />} 
+            label="Communication" 
+            value="English B1 [Ireland]" 
+          />
         </div>
       </div>
     </section>

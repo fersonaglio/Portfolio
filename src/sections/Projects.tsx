@@ -4,7 +4,7 @@ import { Terminal, Database, Shield, Layout, Globe, Cpu } from "lucide-react";
 const projects = [
   {
     title: "TailCash",
-    description: "Financial OS for Power Users. Engineered a high-performance React dashboard with real-time financial tracking, PostgreSQL-backed data integrity, and a focus on security and developer-centric UX.",
+    description: "Financial Architecture & Data Persistence. Engineered a high-integrity React ecosystem for real-time financial orchestration, utilizing PostgreSQL for atomic transaction management and developer-centric UX protocols.",
     header: <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-sm overflow-hidden border border-white/5 relative group">
       <img 
         src="/tailcash-dashboard.png" 
@@ -15,52 +15,52 @@ const projects = [
     </div>,
     icon: <Shield className="h-4 w-4 text-emerald-500" />,
     className: "md:col-span-8",
-    tech: ["React", "PostgreSQL", "Tailwind", "Lucide"],
+    tech: ["React_18", "PostgreSQL", "Tailwind_v3", "Lucide"],
     href: "https://tailcash.com.br",
   },
   {
-    title: "Neighbourhood Manager",
-    description: "Community Scaling Engine. Developed a robust management platform for complex residential ecosystems, optimizing SQL query performance for thousands of concurrent data points.",
+    title: "NBM Manager",
+    description: "Scalable Community Engine. Developed a robust micro-SaaS architecture for residential ecosystem management, optimizing SQL query performance for complex multi-tenant data structures.",
     header: <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-sm bg-gradient-to-br from-neutral-900 to-neutral-800 border border-white/5 flex-col items-center justify-center p-4">
       <div className="text-4xl font-bold tracking-tighter opacity-20">NBM</div>
     </div>,
     icon: <Globe className="h-4 w-4 text-blue-500" />,
     className: "md:col-span-4",
-    tech: ["TypeScript", "SQL Server", "Express"],
+    tech: ["TypeScript", "SQL_Server", "Express"],
   },
   {
-    title: "IT Support Engine",
-    description: "Multi-tier infrastructure support system. Managing production environments for 50+ corporate clients with a focus on uptime and precision.",
+    title: "Questor Systems",
+    description: "Corporate Infrastructure Management. Orchestrating multi-tier production environments for 50+ enterprise clients, focusing on high-availability SQL architectures and mission-critical uptime.",
     header: <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-sm bg-gradient-to-br from-neutral-900 to-neutral-800 border border-white/5 flex-col items-center justify-center p-4">
       <div className="text-4xl font-bold tracking-tighter opacity-20">SYS</div>
     </div>,
     icon: <Cpu className="h-4 w-4 text-orange-500" />,
     className: "md:col-span-4",
-    tech: ["Windows Server", "Firebird", "Networking"],
+    tech: ["Win_Server", "Firebird", "Networking"],
   },
   {
-    title: "SQL Performance Lab",
-    description: "Optimizing relational database architectures for high-load SaaS applications. Achieving 40% reduction in query latency through surgical indexing.",
+    title: "SQL Optimization Lab",
+    description: "High-performance data architectures. Achieving 40% reduction in query latency through surgical indexing and relational schema optimization for high-load SaaS platforms.",
     header: <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-sm bg-gradient-to-br from-neutral-900 to-neutral-800 border border-white/5 flex-col items-center justify-center p-4">
       <div className="text-4xl font-bold tracking-tighter opacity-20">DBA</div>
     </div>,
     icon: <Database className="h-4 w-4 text-purple-500" />,
     className: "md:col-span-4",
-    tech: ["SQL", "Optimization", "SaaS"],
+    tech: ["SQL_Server", "Opt_Metrics", "SaaS_Arch"],
   },
   {
-    title: "Frontend Architect",
-    description: "Crafting minimalist, high-precision user interfaces using modern React patterns and technical aesthetics.",
+    title: "UI System Architect",
+    description: "High-fidelity digital interfaces. Crafting minimalist, high-precision UI systems using modern React patterns and industrial-grade aesthetic protocols.",
     header: <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-sm bg-gradient-to-br from-neutral-900 to-neutral-800 border border-white/5 flex-col items-center justify-center p-4">
       <div className="text-4xl font-bold tracking-tighter opacity-20">GUI</div>
     </div>,
     icon: <Layout className="h-4 w-4 text-pink-500" />,
     className: "md:col-span-4",
-    tech: ["React", "Framer Motion", "Tailwind"],
+    tech: ["React_18", "Framer_Motion", "Tailwind"],
   },
   {
-    title: "NEXUS",
-    description: "AI Infrastructure Wrapper. Developed a sophisticated local environment for OpenCode with seamless Ollama integration, enabling efficient LLM orchestration in isolated systems.",
+    title: "NEXUS Node",
+    description: "AI Infrastructure Orchestration. Engineered a sophisticated local environment for LLM execution with Ollama integration, focusing on isolated system performance.",
     header: <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-sm overflow-hidden border border-white/5 relative group">
       <img 
         src="/nexus-mockup.png" 
@@ -71,12 +71,12 @@ const projects = [
     </div>,
     icon: <Cpu className="h-4 w-4 text-emerald-500" />,
     className: "md:col-span-6",
-    tech: ["Ollama", "LLM", "Infrastructure"],
+    tech: ["Ollama_v2", "LLM_Ops", "Infra_Spec"],
     href: "https://github.com/fersonaglio/NEXUS",
   },
   {
-    title: "Prisma Backend Engine",
-    description: "Robust data persistence layer. Engineered a high-performance API using Prisma ORM and MongoDB, focusing on type-safe database interactions and scalable architecture.",
+    title: "Prisma Data Engine",
+    description: "Type-safe persistence layers. Developed a robust backend ecosystem using Prisma ORM and MongoDB, ensuring high-integrity data flow and scalable node architectures.",
     header: <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-sm overflow-hidden border border-white/5 relative group">
       <img 
         src="/api-mockup.png" 
@@ -87,7 +87,7 @@ const projects = [
     </div>,
     icon: <Database className="h-4 w-4 text-blue-500" />,
     className: "md:col-span-6",
-    tech: ["Node.js", "Prisma", "MongoDB", "TypeScript"],
+    tech: ["Node_js", "Prisma_ORM", "MongoDB", "TypeScript"],
     href: "https://github.com/fersonaglio/API",
   },
 ];
