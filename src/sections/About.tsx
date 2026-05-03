@@ -16,34 +16,49 @@ const About = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
-          {/* Summary / Terminal Style */}
+          {/* Photo & Summary Container */}
           <div className="lg:col-span-7 space-y-8">
-            <div className="industrial-border bg-white/5 p-8 space-y-6">
-              <div className="flex items-center gap-2 pb-4 border-b border-border">
-                <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
-                <span className="font-mono text-[10px] uppercase tracking-widest">Professional_Summary.sh</span>
-              </div>
-              
-              <div className="space-y-4 text-muted-foreground leading-relaxed">
-                <p>
-                  Results-driven <span className="text-foreground font-medium">IT Systems & Database Administrator</span> with 3+ years of technical operations experience. Specialized in high-availability SQL environments and robust system migrations.
-                </p>
-                <p>
-                  Currently overseeing critical production environments for <span className="text-foreground font-medium">50+ corporate clients</span> at Questor Sistemas. Rapidly promoted to Mid-Level due to architectural precision and incident response efficiency.
-                </p>
-                <p>
-                  Complementary frontend expertise in <span className="text-foreground font-medium">React ecosystems</span> allows for a full-stack architectural perspective — bridging the gap between low-level data integrity and high-level user interaction.
-                </p>
-              </div>
-
-              <div className="pt-6 grid grid-cols-2 gap-4 border-t border-border">
-                <div className="space-y-1">
-                  <span className="font-mono text-[9px] uppercase text-muted-foreground">Location</span>
-                  <p className="text-xs">Santa Catarina, Brazil</p>
+            <div className="industrial-border bg-white/5 overflow-hidden">
+              <div className="grid grid-cols-1 md:grid-cols-12">
+                {/* Photo Column */}
+                <div className="md:col-span-4 border-b md:border-b-0 md:border-r border-border relative group">
+                  <img 
+                    src="/Foto perfil-Photoroom(1).png" 
+                    alt="Fernando Sonaglio" 
+                    className="w-full h-full object-cover filter grayscale contrast-125 brightness-90 group-hover:grayscale-0 transition-all duration-500"
+                  />
+                  <div className="absolute inset-0 bg-background/20 group-hover:bg-transparent transition-colors"></div>
                 </div>
-                <div className="space-y-1">
-                  <span className="font-mono text-[9px] uppercase text-muted-foreground">Status</span>
-                  <p className="text-xs text-emerald-500">Active / Operational</p>
+                
+                {/* Text Content Column */}
+                <div className="md:col-span-8 p-8 space-y-6">
+                  <div className="flex items-center gap-2 pb-4 border-b border-border">
+                    <div className="w-2 h-2 rounded-full bg-emerald-500"></div>
+                    <span className="font-mono text-[10px] uppercase tracking-widest">Professional_Summary.sh</span>
+                  </div>
+                  
+                  <div className="space-y-4 text-muted-foreground leading-relaxed">
+                    <p>
+                      Results-driven <span className="text-foreground font-medium">IT Systems & Database Administrator</span> with 3+ years of technical operations experience. Specialized in high-availability SQL environments and robust system migrations.
+                    </p>
+                    <p>
+                      Currently overseeing critical production environments for <span className="text-foreground font-medium">50+ corporate clients</span> at Questor Sistemas. Rapidly promoted to Mid-Level due to architectural precision and incident response efficiency.
+                    </p>
+                    <p>
+                      Complementary frontend expertise in <span className="text-foreground font-medium">React ecosystems</span> allows for a full-stack architectural perspective — bridging the gap between low-level data integrity and high-level user interaction.
+                    </p>
+                  </div>
+
+                  <div className="pt-6 grid grid-cols-2 gap-4 border-t border-border">
+                    <div className="space-y-1">
+                      <span className="font-mono text-[9px] uppercase text-muted-foreground">Location</span>
+                      <p className="text-xs">Santa Catarina, Brazil</p>
+                    </div>
+                    <div className="space-y-1">
+                      <span className="font-mono text-[9px] uppercase text-muted-foreground">Status</span>
+                      <p className="text-xs text-emerald-500">Active / Operational</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

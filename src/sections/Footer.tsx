@@ -39,7 +39,7 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-muted-foreground max-w-sm leading-relaxed text-xs font-mono uppercase tracking-widest opacity-60">
-              High-performance systems architect. Database specialist. Industrial-grade web ecosystems.
+              Data Systems Engineer. Database specialist. Industrial-grade digital ecosystems.
             </p>
             
             <div className="flex gap-4">

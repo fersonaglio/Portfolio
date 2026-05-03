@@ -22,7 +22,6 @@ const Header = ({ activeSection }: HeaderProps) => {
     { name: '// PROJECTS', href: '#projects', id: 'projects' },
     { name: '// SKILLS', href: '#skills', id: 'skills' },
     { name: '// ABOUT', href: '#about', id: 'about' },
-    { name: '// CONTACT', href: '#contact', id: 'contact' },
   ];
 
   const scrollToSection = (href: string) => {

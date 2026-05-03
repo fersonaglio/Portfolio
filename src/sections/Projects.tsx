@@ -5,12 +5,18 @@ const projects = [
   {
     title: "TailCash",
     description: "Financial OS for Power Users. Engineered a high-performance React dashboard with real-time financial tracking, PostgreSQL-backed data integrity, and a focus on security and developer-centric UX.",
-    header: <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-sm bg-gradient-to-br from-neutral-900 to-neutral-800 border border-white/5 flex-col items-center justify-center p-4">
-      <div className="text-4xl font-bold tracking-tighter opacity-20">$TC</div>
+    header: <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-sm overflow-hidden border border-white/5 relative group">
+      <img 
+        src="/tailcash-dashboard.png" 
+        alt="TailCash Dashboard" 
+        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+      />
+      <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
     </div>,
     icon: <Shield className="h-4 w-4 text-emerald-500" />,
     className: "md:col-span-8",
     tech: ["React", "PostgreSQL", "Tailwind", "Lucide"],
+    href: "https://tailcash.com.br",
   },
   {
     title: "Neighbourhood Manager",
@@ -78,6 +84,7 @@ const Projects = () => {
               className={item.className}
               icon={item.icon}
               tech={item.tech}
+              href={item.href}
             />
           ))}
         </BentoGrid>
