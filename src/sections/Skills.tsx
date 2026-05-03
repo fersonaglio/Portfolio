@@ -8,7 +8,6 @@ import {
   ShieldCheck
 } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { cn } from '../lib/utils';
 import React from 'react';
 
 const skillCategories = [
