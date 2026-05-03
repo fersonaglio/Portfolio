@@ -1,13 +1,10 @@
 import { 
   Code2, 
   Database, 
-  Layers,
-  GitBranch,
   Terminal,
   Cpu,
   Settings,
   Globe,
-  Wrench,
   ShieldCheck
 } from 'lucide-react';
 import { motion } from 'framer-motion';

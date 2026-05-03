@@ -1,4 +1,4 @@
-import { Mail, Linkedin, Github, Send, Phone, Terminal } from 'lucide-react';
+import { Mail, Linkedin, Github, Phone, Terminal } from 'lucide-react';
 import { useState } from 'react';
 
 // Contact data - obfuscated to prevent simple scraping

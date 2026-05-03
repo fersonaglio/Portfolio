@@ -1,7 +1,6 @@
 import { Terminal, Linkedin, Github, Mail } from 'lucide-react';
 
 const ENCODED_EMAIL = 'c29uYWdsaW8zQGdtYWlsLmNvbQ==';
-const ENCODED_PHONE = 'KzU1ICg0OSkgOTk5MzQtNDg4Mg==';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();

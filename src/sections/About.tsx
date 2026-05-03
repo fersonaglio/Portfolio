@@ -1,5 +1,4 @@
-import { Terminal, Fingerprint, Activity, Zap } from 'lucide-react';
-import { motion } from 'framer-motion';
+import { Fingerprint, Activity, Zap } from 'lucide-react';
 
 const About = () => {
   return (
