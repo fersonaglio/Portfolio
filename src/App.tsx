@@ -6,11 +6,8 @@ import Skills from './sections/Skills';
 import About from './sections/About';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
-import { useTheme } from './hooks/useTheme';
-
 function App() {
   const [activeSection, setActiveSection] = useState('home');
-  const { toggleTheme, isDark, mounted } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -33,18 +30,11 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  // Prevent flash of wrong theme
-  if (!mounted) {
-    return (
-      <div className="min-h-screen bg-bg-main flex items-center justify-center">
-        <div className="w-8 h-8 border-4 border-accent-teal border-t-transparent rounded-full animate-spin"></div>
-      </div>
-    );
-  }
+
 
   return (
-    <div className="min-h-screen bg-bg-main dark:bg-gray-900 transition-colors duration-300">
-      <Header activeSection={activeSection} toggleTheme={toggleTheme} isDark={isDark} />
+    <div className="min-h-screen bg-background text-foreground dark transition-colors duration-300 overflow-x-hidden">
+      <Header activeSection={activeSection} />
       <main>
         <Hero />
         <Projects />

@@ -5,68 +5,56 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        'montserrat': ['Montserrat', 'sans-serif'],
         'inter': ['Inter', 'sans-serif'],
+        'mono': ['JetBrains Mono', 'monospace'],
       },
       colors: {
-        border: "hsl(var(--border))",
-        input: "hsl(var(--input))",
-        ring: "hsl(var(--ring))",
-        background: "hsl(var(--background))",
-        foreground: "hsl(var(--foreground))",
+        border: "#1F1F1F",
+        input: "#1F1F1F",
+        ring: "#525252",
+        background: "#0A0A0A",
+        foreground: "#EDEDED",
         primary: {
-          DEFAULT: "hsl(var(--primary))",
-          foreground: "hsl(var(--primary-foreground))",
+          DEFAULT: "#EDEDED",
+          foreground: "#0A0A0A",
         },
         secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
+          DEFAULT: "#1F1F1F",
+          foreground: "#EDEDED",
         },
         destructive: {
           DEFAULT: "hsl(var(--destructive) / <alpha-value>)",
           foreground: "hsl(var(--destructive-foreground) / <alpha-value>)",
         },
         muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
+          DEFAULT: "#1F1F1F",
+          foreground: "#737373",
         },
         accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
+          DEFAULT: "#EDEDED",
+          foreground: "#0A0A0A",
         },
         popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
+          DEFAULT: "#0A0A0A",
+          foreground: "#EDEDED",
         },
         card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
+          DEFAULT: "#0A0A0A",
+          foreground: "#EDEDED",
         },
-        // Cores Pastel Personalizadas
-        pastel: {
-          pink: '#FCE4EC',
-          blue: '#E3F2FD',
-          green: '#E0F2F1',
-          yellow: '#FFFDE7',
-        },
-        accent: {
-          teal: '#546E7A',
-          green: '#81C784',
-          pink: '#F48FB1',
-          coral: '#FFAB91',
-        },
-        text: {
-          primary: '#1A1A1A',
-          secondary: '#555555',
-        },
-        bg: {
-          main: '#F8F9FA',
+        // SaaS Industrial Tokens
+        industrial: {
+          bg: '#0A0A0A',
+          border: '#1F1F1F',
+          text: '#EDEDED',
+          muted: '#737373',
+          accent: '#FFFFFF',
         }
       },
       borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+        lg: "0.5rem",
+        md: "0.375rem",
+        sm: "0.25rem",
       },
     },
   },
