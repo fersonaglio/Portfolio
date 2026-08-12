@@ -14,6 +14,7 @@ export const BentoGrid = ({
         "grid grid-cols-1 md:grid-cols-12 gap-6 max-w-7xl mx-auto",
         className
       )}
+      role="list"
     >
       {children}
     </div>
@@ -43,6 +44,7 @@ export const BentoGridItem = ({
         "row-span-1 rounded-sm group/bento border-glow glass-card glass-hover justify-between flex flex-col space-y-6 p-6 md:p-8",
         className
       )}
+      role="listitem"
     >
       {header}
       <div className="transition duration-300 flex flex-col flex-grow">
@@ -75,7 +77,8 @@ export const BentoGridItem = ({
               href={href} 
               target="_blank" 
               rel="noopener noreferrer"
-              className="font-mono text-[9px] uppercase tracking-[0.2em] text-emerald-500/80 hover:text-emerald-400 transition-colors flex items-center gap-2 group/link"
+              className="font-mono text-[9px] uppercase tracking-[0.2em] text-emerald-400 hover:text-emerald-300 transition-colors flex items-center gap-2 group/link focus-ring"
+              aria-label={`Visit ${title} deployment`}
             >
               <span className="opacity-50 group-hover/link:opacity-100 transition-opacity">[</span>
               <span>VISIT_DEPLOYMENT</span>

@@ -5,10 +5,12 @@
 User-agent: *
 Allow: /
 
-# Protect sensitive paths (if any exist)
+# Protect sensitive paths
 Disallow: /admin/
 Disallow: /api/
 Disallow: /private/
+Disallow: /CV.pdf
+Disallow: /CV-*.pdf
 
 # Block crawlers from indexing images (prevents image scraping)
 Disallow: /*.png$

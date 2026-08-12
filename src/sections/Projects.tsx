@@ -1,93 +1,70 @@
 import { BentoGrid, BentoGridItem } from "../components/BentoGrid";
-import { Terminal, Database, Shield, Layout, Globe, Cpu } from "lucide-react";
+import { Terminal, Shield, Film, Camera, Database } from "lucide-react";
+import ProjectImageHeader from "../components/projects/ProjectImageHeader";
+import ProjectLabelHeader from "../components/projects/ProjectLabelHeader";
+import type { BentoProject } from "../types/project";
 
-const projects = [
+const projects: BentoProject[] = [
   {
+    slug: "tailcash",
     title: "TailCash",
-    description: "Financial Architecture & Data Persistence. Engineered a high-integrity React ecosystem for real-time financial orchestration, utilizing PostgreSQL for atomic transaction management and developer-centric UX protocols.",
-    header: <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-sm overflow-hidden border border-white/5 relative group">
-      <img 
-        src="/tailcash-dashboard.png" 
-        alt="TailCash Dashboard" 
-        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+    description:
+      "SaaS de finanças pessoais com segurança bancária — PGP encryption no banco, RLS multi-tenant, JWT dual-token, Stripe e IA integrada.",
+    header: (
+      <ProjectImageHeader
+        src="/tailcash-dashboard.png"
+        alt="TailCash Dashboard"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
-    </div>,
+    ),
     icon: <Shield className="h-4 w-4 text-emerald-500" />,
     className: "md:col-span-8",
-    tech: ["React_18", "PostgreSQL", "Tailwind_v3", "Lucide"],
+    tech: ["React", "PostgreSQL", "Express", "Stripe", "PWA"],
     href: "https://tailcash.com.br",
   },
   {
-    title: "NBM Manager",
-    description: "Scalable Community Engine. Developed a robust micro-SaaS architecture for residential ecosystem management, optimizing SQL query performance for complex multi-tenant data structures.",
-    header: <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-sm bg-gradient-to-br from-neutral-900 to-neutral-800 border border-white/5 flex-col items-center justify-center p-4">
-      <div className="text-4xl font-bold tracking-tighter opacity-20">NBM</div>
-    </div>,
-    icon: <Globe className="h-4 w-4 text-blue-500" />,
-    className: "md:col-span-4",
-    tech: ["TypeScript", "SQL_Server", "Express"],
-  },
-  {
-    title: "Questor Systems",
-    description: "Corporate Infrastructure Management. Orchestrating multi-tier production environments for 50+ enterprise clients, focusing on high-availability SQL architectures and mission-critical uptime.",
-    header: <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-sm bg-gradient-to-br from-neutral-900 to-neutral-800 border border-white/5 flex-col items-center justify-center p-4">
-      <div className="text-4xl font-bold tracking-tighter opacity-20">SYS</div>
-    </div>,
-    icon: <Cpu className="h-4 w-4 text-orange-500" />,
-    className: "md:col-span-4",
-    tech: ["Win_Server", "Firebird", "Networking"],
-  },
-  {
-    title: "SQL Optimization Lab",
-    description: "High-performance data architectures. Achieving 40% reduction in query latency through surgical indexing and relational schema optimization for high-load SaaS platforms.",
-    header: <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-sm bg-gradient-to-br from-neutral-900 to-neutral-800 border border-white/5 flex-col items-center justify-center p-4">
-      <div className="text-4xl font-bold tracking-tighter opacity-20">DBA</div>
-    </div>,
-    icon: <Database className="h-4 w-4 text-purple-500" />,
-    className: "md:col-span-4",
-    tech: ["SQL_Server", "Opt_Metrics", "SaaS_Arch"],
-  },
-  {
-    title: "UI System Architect",
-    description: "High-fidelity digital interfaces. Crafting minimalist, high-precision UI systems using modern React patterns and industrial-grade aesthetic protocols.",
-    header: <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-sm bg-gradient-to-br from-neutral-900 to-neutral-800 border border-white/5 flex-col items-center justify-center p-4">
-      <div className="text-4xl font-bold tracking-tighter opacity-20">GUI</div>
-    </div>,
-    icon: <Layout className="h-4 w-4 text-pink-500" />,
-    className: "md:col-span-4",
-    tech: ["React_18", "Framer_Motion", "Tailwind"],
-  },
-  {
-    title: "NEXUS Node",
-    description: "AI Infrastructure Orchestration. Engineered a sophisticated local environment for LLM execution with Ollama integration, focusing on isolated system performance.",
-    header: <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-sm overflow-hidden border border-white/5 relative group">
-      <img 
-        src="/nexus-mockup.png" 
-        alt="NEXUS AI Infrastructure" 
-        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+    slug: "glimpse",
+    title: "Glimpse",
+    description:
+      "Compartilhamento de fotos em eventos em tempo real — moderação IA com GPU, busca facial vetorial pgvector e self‑hosted.",
+    header: (
+      <ProjectLabelHeader
+        label="GLIMPSE // v0.1"
+        accent="from-sky-950/40 to-neutral-900"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
-    </div>,
-    icon: <Cpu className="h-4 w-4 text-emerald-500" />,
-    className: "md:col-span-6",
-    tech: ["Ollama_v2", "LLM_Ops", "Infra_Spec"],
-    href: "https://github.com/fersonaglio/NEXUS",
+    ),
+    icon: <Camera className="h-4 w-4 text-sky-400" />,
+    className: "md:col-span-4",
+    tech: ["Next.js", "Redis", "PostgreSQL", "TensorFlow", "SSE"],
   },
   {
+    slug: "spliced",
+    title: "Spliced",
+    description:
+      "Plataforma de cortes virais com IA — pipeline local com análise vetorial 200D, face‑tracking, MCP server e P2P streaming.",
+    header: (
+      <ProjectLabelHeader
+        label="SPLICED // v0.1"
+        accent="from-purple-950/40 to-neutral-900"
+      />
+    ),
+    icon: <Film className="h-4 w-4 text-purple-500" />,
+    className: "md:col-span-4",
+    tech: ["Next.js", "Python", "FFmpeg", "WebTorrent", "MCP"],
+  },
+  {
+    slug: "prisma-api",
     title: "Prisma Data Engine",
-    description: "Type-safe persistence layers. Developed a robust backend ecosystem using Prisma ORM and MongoDB, ensuring high-integrity data flow and scalable node architectures.",
-    header: <div className="flex flex-1 w-full h-full min-h-[6rem] rounded-sm overflow-hidden border border-white/5 relative group">
-      <img 
-        src="/api-mockup.png" 
-        alt="Prisma API Engine" 
-        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+    description:
+      "API REST com tipagem segura — Express, Prisma ORM e MongoDB para CRUD completo com documentação OpenAPI.",
+    header: (
+      <ProjectImageHeader
+        src="/api-mockup.png"
+        alt="Prisma API Engine"
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent"></div>
-    </div>,
-    icon: <Database className="h-4 w-4 text-blue-500" />,
-    className: "md:col-span-6",
-    tech: ["Node_js", "Prisma_ORM", "MongoDB", "TypeScript"],
+    ),
+    icon: <Database className="h-4 w-4 text-amber-500" />,
+    className: "md:col-span-8",
+    tech: ["Express", "Prisma", "MongoDB", "Node.js"],
     href: "https://github.com/fersonaglio/API",
   },
 ];
@@ -107,9 +84,9 @@ const Projects = () => {
         </div>
 
         <BentoGrid>
-          {projects.map((item, i) => (
+          {projects.map((item) => (
             <BentoGridItem
-              key={i}
+              key={item.slug}
               title={item.title}
               description={item.description}
               header={item.header}

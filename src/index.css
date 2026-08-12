@@ -17,7 +17,7 @@
     --secondary: #1F1F1F;
     --secondary-foreground: #EDEDED;
     --muted: #1F1F1F;
-    --muted-foreground: #737373;
+    --muted-foreground: #949494;
     --accent: #EDEDED;
     --accent-foreground: #0A0A0A;
     --destructive: 0 84.2% 60.2%;
@@ -75,5 +75,8 @@
   }
   .mono-detail {
     @apply font-mono text-[9px] uppercase tracking-[0.2em] text-muted-foreground opacity-70;
+  }
+  .focus-ring {
+    @apply focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-emerald-500/60 focus-visible:ring-offset-1 focus-visible:ring-offset-background;
   }
 }

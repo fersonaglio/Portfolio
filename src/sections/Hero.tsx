@@ -55,7 +55,7 @@ const Hero = () => {
               transition={{ delay: 0.2 }}
               className="flex flex-col items-center space-y-4"
             >
-              <h2 className="font-mono text-xs sm:text-sm uppercase tracking-[0.4em] text-emerald-500/90 font-medium">
+              <h2 className="font-mono text-xs sm:text-sm uppercase tracking-[0.4em] text-emerald-400 font-medium">
                 Data Systems Engineer // v0.1
               </h2>
               <p className="text-base sm:text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed text-balance font-inter opacity-70">
@@ -75,7 +75,8 @@ const Hero = () => {
               <Magnetic strength={0.2}>
                 <button
                   onClick={scrollToProjects}
-                  className="group relative flex items-center gap-4 px-10 py-5 bg-foreground text-background font-mono text-[10px] uppercase tracking-widest transition-transform active:scale-95 hover:bg-emerald-500 transition-colors duration-500"
+                  aria-label="Scroll to projects section"
+                  className="group relative flex items-center gap-4 px-10 py-5 bg-foreground text-background font-mono text-[10px] uppercase tracking-widest transition-transform active:scale-95 hover:bg-emerald-500 transition-colors duration-500 focus-ring"
                 >
                   ACCESS_ARCHIVE
                   <ArrowRight className="w-3.5 h-3.5" />
@@ -84,7 +85,8 @@ const Hero = () => {
 
               <a
                 href="/CV.pdf"
-                className="group flex items-center gap-4 px-10 py-5 border border-white/10 hover:border-white/20 glass-hover font-mono text-[10px] uppercase tracking-widest text-foreground transition-all"
+                aria-label="Download CV as PDF"
+                className="group flex items-center gap-4 px-10 py-5 border border-white/10 hover:border-white/20 glass-hover font-mono text-[10px] uppercase tracking-widest text-foreground transition-all focus-ring"
               >
                 DOWNLOAD_SPEC.PDF
               </a>

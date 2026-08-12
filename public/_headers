@@ -20,9 +20,8 @@
   # Content Security Policy - controls what resources can load
   Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self'; connect-src 'self'; media-src 'self'; object-src 'none'; frame-ancestors 'none'; base-uri 'self'; form-action 'self';
 
-  # Strict Transport Security (enable when you have HTTPS)
-  # Uncomment the line below after deploying with HTTPS:
-  # Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+  # Strict Transport Security
+  Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
 
   # Cache control for static assets
   Cache-Control: public, max-age=31536000, immutable
