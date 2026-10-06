@@ -1,5 +1,5 @@
 import { BentoGrid, BentoGridItem } from "../components/BentoGrid";
-import { Terminal, Shield, Film, Camera, Database } from "lucide-react";
+import { Terminal, Shield, Camera, Database } from "lucide-react";
 import ProjectImageHeader from "../components/projects/ProjectImageHeader";
 import ProjectLabelHeader from "../components/projects/ProjectLabelHeader";
 import type { BentoProject } from "../types/project";
@@ -9,7 +9,7 @@ const projects: BentoProject[] = [
     slug: "tailcash",
     title: "TailCash",
     description:
-      "SaaS de finanças pessoais com segurança bancária — PGP encryption no banco, RLS multi-tenant, JWT dual-token, Stripe e IA integrada.",
+      "Personal finance project with an Express API, PostgreSQL and incremental data synchronisation. Personal project; source code is private.",
     header: (
       <ProjectImageHeader
         src="/tailcash-dashboard.png"
@@ -18,14 +18,14 @@ const projects: BentoProject[] = [
     ),
     icon: <Shield className="h-4 w-4 text-emerald-500" />,
     className: "md:col-span-8",
-    tech: ["React", "PostgreSQL", "Express", "Stripe", "PWA"],
+    tech: ["PostgreSQL", "Express", "SQL"],
     href: "https://tailcash.com.br",
   },
   {
     slug: "glimpse",
     title: "Glimpse",
     description:
-      "Compartilhamento de fotos em eventos em tempo real — moderação IA com GPU, busca facial vetorial pgvector e self‑hosted.",
+      "Personal photo-sharing project with PostgreSQL migrations, Express routes and real-time events. Source code is private.",
     header: (
       <ProjectLabelHeader
         label="GLIMPSE // v0.1"
@@ -34,28 +34,13 @@ const projects: BentoProject[] = [
     ),
     icon: <Camera className="h-4 w-4 text-sky-400" />,
     className: "md:col-span-4",
-    tech: ["Next.js", "Redis", "PostgreSQL", "TensorFlow", "SSE"],
-  },
-  {
-    slug: "spliced",
-    title: "Spliced",
-    description:
-      "Plataforma de cortes virais com IA — pipeline local com análise vetorial 200D, face‑tracking, MCP server e P2P streaming.",
-    header: (
-      <ProjectLabelHeader
-        label="SPLICED // v0.1"
-        accent="from-purple-950/40 to-neutral-900"
-      />
-    ),
-    icon: <Film className="h-4 w-4 text-purple-500" />,
-    className: "md:col-span-4",
-    tech: ["Next.js", "Python", "FFmpeg", "WebTorrent", "MCP"],
+    tech: ["PostgreSQL", "Express", "Events"],
   },
   {
     slug: "prisma-api",
     title: "Prisma Data Engine",
     description:
-      "API REST com tipagem segura — Express, Prisma ORM e MongoDB para CRUD completo com documentação OpenAPI.",
+      "Public personal API project built with Express, Prisma and MongoDB. Code is available on GitHub.",
     header: (
       <ProjectImageHeader
         src="/api-mockup.png"

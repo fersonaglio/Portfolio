@@ -38,13 +38,13 @@ const About = () => {
                   
                   <div className="space-y-4 text-muted-foreground leading-relaxed">
                     <p>
-                      Results-driven <span className="text-foreground font-medium">IT Systems & Database Administrator</span> with 3+ years of technical operations experience. Specialized in high-availability SQL environments and robust system migrations.
+                      <span className="text-foreground font-medium">Application and database support professional</span> with experience helping users and investigating ERP application and data issues.
                     </p>
                     <p>
-                      Currently overseeing critical production environments for <span className="text-foreground font-medium">50+ corporate clients</span> at Questor Sistemas. Rapidly promoted to Mid-Level due to architectural precision and incident response efficiency.
+                      At <span className="text-foreground font-medium">Questor Sistemas</span>, I use SQL, logs and structured diagnostics to investigate incidents, validate updates and migrations, and document findings for technical teams and users.
                     </p>
                     <p>
-                      Complementary frontend expertise in <span className="text-foreground font-medium">React ecosystems</span> allows for a full-stack architectural perspective — bridging the gap between low-level data integrity and high-level user interaction.
+                      Personal projects in <span className="text-foreground font-medium">React, Node.js and PostgreSQL</span> help me understand the application and API layers behind the issues I troubleshoot.
                     </p>
                   </div>
 
@@ -74,16 +74,16 @@ const About = () => {
               <div className="space-y-6">
                 <div className="relative pl-4 border-l border-border group">
                   <div className="absolute left-[-1px] top-0 w-[1px] h-4 bg-emerald-500"></div>
-                  <h4 className="text-sm font-semibold">Mid-Level DB Admin</h4>
+                  <h4 className="text-sm font-semibold">Application / Database Support</h4>
                   <p className="text-[10px] font-mono text-muted-foreground uppercase">Questor Sistemas // 2024 - Present</p>
                 </div>
                 <div className="relative pl-4 border-l border-border">
-                  <h4 className="text-sm font-semibold">Junior IT Support</h4>
-                  <p className="text-[10px] font-mono text-muted-foreground uppercase">Questor Sistemas // 2023 - 2024</p>
+                  <h4 className="text-sm font-semibold">Computer Support Analyst</h4>
+                  <p className="text-[10px] font-mono text-muted-foreground uppercase">UCEFF // 2022 - 2024</p>
                 </div>
                 <div className="relative pl-4 border-l border-border">
-                  <h4 className="text-sm font-semibold">IT Consultant</h4>
-                  <p className="text-[10px] font-mono text-muted-foreground uppercase">Independent // 2021 - 2023</p>
+                  <h4 className="text-sm font-semibold">Information Systems</h4>
+                  <p className="text-[10px] font-mono text-muted-foreground uppercase">Estácio // 2021 - 2025</p>
                 </div>
               </div>
             </div>
@@ -100,7 +100,7 @@ const About = () => {
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-xs">Rocketseat Discover</span>
-                  <span className="font-mono text-[9px] text-muted-foreground">Web Dev // 2023</span>
+                  <span className="font-mono text-[9px] text-muted-foreground">Web Dev // 2024</span>
                 </div>
               </div>
             </div>

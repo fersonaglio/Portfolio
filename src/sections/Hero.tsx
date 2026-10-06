@@ -34,7 +34,7 @@ const Hero = () => {
               <span className="font-mono text-[9px] uppercase tracking-[0.25em] text-foreground/60">System_Status: Operational</span>
             </div>
             <div className="h-3 w-[1px] bg-white/10"></div>
-            <span className="font-mono text-[9px] uppercase tracking-[0.25em] text-emerald-500/80">Available_for_2026</span>
+            <span className="font-mono text-[9px] uppercase tracking-[0.25em] text-emerald-500/80">Based_in_Brazil</span>
           </motion.div>
 
           {/* Core Headline */}
@@ -56,10 +56,10 @@ const Hero = () => {
               className="flex flex-col items-center space-y-4"
             >
               <h2 className="font-mono text-xs sm:text-sm uppercase tracking-[0.4em] text-emerald-400 font-medium">
-                Data Systems Engineer // v0.1
+                Application Support // Database Support
               </h2>
               <p className="text-base sm:text-lg text-muted-foreground max-w-xl mx-auto leading-relaxed text-balance font-inter opacity-70">
-                Engineering high-integrity data ecosystems and high-precision digital interfaces through surgical architecture.
+                Supporting ERP applications and investigating data issues with SQL, PostgreSQL and Firebird.
               </p>
             </motion.div>
           </div>
@@ -99,7 +99,7 @@ const Hero = () => {
                   <Terminal className="w-3.5 h-3.5 opacity-50" />
                   <span className="mono-detail">Core_Engine</span>
                 </div>
-                <p className="font-mono text-[10px] uppercase tracking-wider text-foreground/80 group-hover:text-emerald-500 transition-colors">TypeScript // React // Node.js</p>
+                <p className="font-mono text-[10px] uppercase tracking-wider text-foreground/80 group-hover:text-emerald-500 transition-colors">Application // ERP // Support</p>
               </div>
               
               <div className="flex flex-col items-center sm:items-start gap-3 group">
@@ -107,7 +107,7 @@ const Hero = () => {
                   <Database className="w-3.5 h-3.5 opacity-50" />
                   <span className="mono-detail">Persistence_Layer</span>
                 </div>
-                <p className="font-mono text-[10px] uppercase tracking-wider text-foreground/80 group-hover:text-emerald-500 transition-colors">PostgreSQL // SQL_Server // Firebird</p>
+                <p className="font-mono text-[10px] uppercase tracking-wider text-foreground/80 group-hover:text-emerald-500 transition-colors">PostgreSQL // SQL // Firebird</p>
               </div>
 
               <div className="flex flex-col items-center sm:items-start gap-3 group">
@@ -115,7 +115,7 @@ const Hero = () => {
                   <Code2 className="w-3.5 h-3.5 opacity-50" />
                   <span className="mono-detail">Industrial_Ops</span>
                 </div>
-                <p className="font-mono text-[10px] uppercase tracking-wider text-foreground/80 group-hover:text-emerald-500 transition-colors">50+ Corporate_Environments</p>
+                <p className="font-mono text-[10px] uppercase tracking-wider text-foreground/80 group-hover:text-emerald-500 transition-colors">Incidents // Validation // Documentation</p>
               </div>
             </div>
           </motion.div>

@@ -12,33 +12,33 @@ import React from 'react';
 
 const skillCategories = [
   {
-    title: "Logic & Frameworks",
+    title: "Personal Projects",
     icon: <Code2 className="w-4 h-4" />,
     skills: [
-      { name: "React", level: "L3 / Mid", tech: "Hooks, Context, Performance" },
-      { name: "TypeScript", level: "L2 / Intermediate", tech: "Advanced Types, Interfaces" },
-      { name: "JavaScript", level: "L4 / Senior-ish", tech: "ES6+, Async, DOM" },
-      { name: "Tailwind CSS", level: "L5 / Expert", tech: "JIT, Custom Config" },
+      { name: "React", level: "Personal projects", tech: "Components and interfaces" },
+      { name: "TypeScript", level: "Personal projects", tech: "Types and APIs" },
+      { name: "JavaScript", level: "Personal projects", tech: "Node.js and browser code" },
+      { name: "Express", level: "Personal projects", tech: "API routes" },
     ]
   },
   {
-    title: "Database Architectures",
+    title: "Databases & SQL",
     icon: <Database className="h-4 w-4" />,
     skills: [
-      { name: "PostgreSQL", level: "L5 / Expert", tech: "Optimization, Indexing" },
-      { name: "SQL Server", level: "L5 / Expert", tech: "T-SQL, Procedures" },
-      { name: "Firebird", level: "L5 / Expert", tech: "Legacy Maintenance" },
-      { name: "Query Tuning", level: "L4 / Advanced", tech: "Execution Plans" },
+      { name: "PostgreSQL", level: "Professional use", tech: "Support and data investigation" },
+      { name: "Firebird", level: "Professional use", tech: "ERP database support" },
+      { name: "SQL", level: "Professional use", tech: "Reports and diagnostics" },
+      { name: "Data validation", level: "Professional use", tech: "Updates and migrations" },
     ]
   },
   {
     title: "System Operations",
     icon: <Settings className="h-4 w-4" />,
     skills: [
-      { name: "Windows Server", level: "L4 / Advanced", tech: "AD, IIS, Security" },
-      { name: "IT Support T1-T3", level: "L5 / Expert", tech: "Critical Infrastructure" },
-      { name: "ERP Systems", level: "L4 / Advanced", tech: "Questor, Integration" },
-      { name: "API Strategy", level: "L3 / Mid", tech: "REST, Webhooks" },
+      { name: "Application Support", level: "Professional use", tech: "Incidents and troubleshooting" },
+      { name: "IT Support", level: "Professional use", tech: "Users and workstations" },
+      { name: "ERP Systems", level: "Professional use", tech: "Support and integration issues" },
+      { name: "Technical Documentation", level: "Professional use", tech: "Findings and procedures" },
     ]
   }
 ];
@@ -120,17 +120,17 @@ const Skills = () => {
           <SystemStat 
             icon={<ShieldCheck className="w-4 h-4" />} 
             label="Infrastructure" 
-            value="50+ Corporate Clients" 
+            value="ERP and database support"
           />
           <SystemStat 
             icon={<Terminal className="w-4 h-4" />} 
             label="Runtime" 
-            value="3+ Years Professional" 
+            value="Brazil-based professional"
           />
           <SystemStat 
             icon={<Globe className="w-4 h-4" />} 
             label="Communication" 
-            value="English B1 [Ireland]" 
+            value="English intermediate"
           />
         </div>
       </div>

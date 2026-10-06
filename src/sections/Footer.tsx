@@ -38,11 +38,11 @@ const Footer = () => {
               </span>
             </div>
             <p className="text-muted-foreground max-w-sm leading-relaxed text-xs font-mono uppercase tracking-widest opacity-60">
-              Data Systems Engineer. Database specialist. Industrial-grade digital ecosystems.
+              Application and database support. SQL, PostgreSQL, Firebird and ERP systems.
             </p>
             
             <div className="flex gap-4">
-              <a href="https://www.linkedin.com/in/fernando-sonaglio0/" target="_blank" rel="noopener noreferrer" className="p-2 industrial-border hover:bg-white/5 transition-colors">
+              <a href="https://www.linkedin.com/in/fernandosonaglio/" target="_blank" rel="noopener noreferrer" className="p-2 industrial-border hover:bg-white/5 transition-colors">
                 <Linkedin className="w-4 h-4 text-muted-foreground" />
               </a>
               <a href="https://github.com/fersonaglio" target="_blank" rel="noopener noreferrer" className="p-2 industrial-border hover:bg-white/5 transition-colors">

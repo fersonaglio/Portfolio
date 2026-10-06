@@ -14,18 +14,13 @@ const Contact = () => {
     message: '',
     website: '', 
   });
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitted, setSubmitted] = useState(false);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (formData.website) return;
-    setIsSubmitting(true);
-    await new Promise(resolve => setTimeout(resolve, 1500));
-    setIsSubmitting(false);
-    setSubmitted(true);
-    setFormData({ name: '', email: '', message: '', website: '' });
-    setTimeout(() => setSubmitted(false), 3000);
+    const subject = encodeURIComponent(`Portfolio enquiry from ${formData.name}`);
+    const body = encodeURIComponent(`${formData.message}\n\nFrom: ${formData.name} <${formData.email}>`);
+    window.location.href = `mailto:${DECODED_EMAIL}?subject=${subject}&body=${body}`;
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -71,7 +66,7 @@ const Contact = () => {
               <div className="space-y-4">
                 <p className="font-mono text-[9px] uppercase tracking-widest text-muted-foreground">Social_Nodes</p>
                 <div className="space-y-3">
-                  <a href="https://www.linkedin.com/in/fernando-sonaglio0/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 group">
+                  <a href="https://www.linkedin.com/in/fernandosonaglio/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 group">
                     <Linkedin className="w-4 h-4 text-muted-foreground group-hover:text-foreground transition-colors" />
                     <span className="text-xs font-mono group-hover:underline">LinkedIn/sonaglio</span>
                   </a>
@@ -133,11 +128,11 @@ const Contact = () => {
 
               <button
                 type="submit"
-                disabled={isSubmitting}
                 className="w-full md:w-auto px-12 py-4 bg-foreground text-background font-mono text-[10px] uppercase tracking-widest font-bold hover:scale-[1.02] active:scale-95 transition-all disabled:opacity-50"
               >
-                {isSubmitting ? "TRANSMITTING..." : submitted ? "TRANSMISSION SUCCESSFUL" : "SEND MESSAGE // EXECUTE"}
+                OPEN EMAIL DRAFT
               </button>
+              <p className="text-xs text-muted-foreground">This opens an email draft in your mail app. You can review it before sending.</p>
             </form>
           </div>
         </div>
